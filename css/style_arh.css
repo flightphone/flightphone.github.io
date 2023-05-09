@@ -393,9 +393,68 @@ a {
 }
 
 .mapimage {
-    background: url(/img/map1.png),  url(/img/map2.png), rgba(28, 28, 28, 0.27);
+    background: url(/img/map1.png), url(/img/map2.png), rgba(28, 28, 28, 0.27);
     background-blend-mode: normal, multiply;
     mix-blend-mode: normal;
     opacity: 0.9;
 }
 
+.piptitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+
+    color: #FFFFFF;
+
+}
+
+.piptitle2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: flex-end;
+
+    color: #FFFFFF;
+}
+
+.picbut {
+    border: 1px solid #FFFFFF;
+    border-radius: 1px;
+    height: 50px;
+    width: 200px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+
+
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    display: flex;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.pictit3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 73px;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+
+    color: #FFFFFF;
+}
