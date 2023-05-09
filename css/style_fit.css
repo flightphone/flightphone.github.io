@@ -1,0 +1,165 @@
+body {
+    position: relative;
+}
+
+.fit_page_title {
+    font-family: 'Unbounded';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    /* identical to box height, or 140% */
+
+
+    color: #1F2830;
+}
+
+.fit_subtitle {
+    font-family: 'Unbounded';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+
+
+    /* Dark */
+
+    color: #1F2830;
+
+}
+
+
+.fit_meta {
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    /* identical to box height, or 150% */
+
+
+    /* Dark */
+
+    color: #1F2830;
+
+}
+
+.fit_row {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.fit_left_top {
+    margin-top: 32px;
+}
+
+.fit_cart {
+    position: relative;
+    height: 208px;
+    border-radius: 20px;
+    margin-bottom: 16px;
+    padding-top: 20px;
+    padding-left: 24px;
+    border: 0px solid rgba(0, 0, 0, 0);
+}
+
+.fit_bg_clr1 {
+    background: #FFCEE5;
+}
+
+.fit_bg_clr2 {
+    background: #C4E8FF;
+}
+
+.fit_bg_clr3 {
+    background: #FFD9AD;
+}
+
+.fit_hug {
+    width: 124px;
+    height: 104px;
+
+
+}
+
+.fit_button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 24px;
+    gap: 12px;
+
+
+    width: 99px;
+    height: 40px;
+
+    background: #F7F8FC;
+    border-radius: 16px;
+    margin-top: 24px;
+    cursor: pointer;
+}
+
+.fit_btn_text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+
+    text-align: center;
+
+    /* Dark */
+
+    color: #1F2830;
+}
+
+footer {
+    background: #F7F8FC;
+    height: 48px;
+    position: sticky;
+    bottom: 0px;
+    padding-top: 8px;
+
+}
+
+.footer_but {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+
+    width: 80px;
+    height: 40px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height, or 133% */
+
+    text-align: center;
+
+    /* Dark Gray */
+
+    color: #A5AAB4;
+    cursor: pointer;
+
+}
+
+.footer_but:hover{
+    color: #589BFF
+}
+
+.footer_but svg {
+    stroke: #A5AAB4
+}
+
+.footer_but:hover svg{
+    stroke: #589BFF
+}

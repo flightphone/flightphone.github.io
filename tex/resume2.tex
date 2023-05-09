@@ -1,0 +1,142 @@
+\documentclass[a4paper,10pt]{article}
+
+%A Few Useful Packages
+\usepackage{xltxtra}
+\usepackage{polyglossia}
+\setmainlanguage{russian}
+\usepackage{marvosym}
+\usepackage{fontspec} 					%for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[big]{layaureo} 				%better formatting of the A4 page
+% an alternative to Layaureo can be ** \usepackage{fullpage} **
+\usepackage{supertabular} 				%for Grades
+\usepackage{titlesec}					%custom \section
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont{Times New Roman}
+
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+%Tweak a bit the top margin
+%\addtolength{\voffset}{-1.3cm}
+
+%Italian hyphenation for the word: ''corporations''
+\hyphenation{im-pre-se}
+
+%-------------WATERMARK TEST [**not part of a CV**]---------------
+\usepackage[absolute]{textpos}
+
+\setlength{\TPHorizModule}{30mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{2mm}{0.65\paperheight}
+\setlength{\parindent}{0pt}
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+
+%WATERMARK TEST [**not part of a CV**]---------------
+%\font\wm=''Baskerville:color=787878'' at 8pt
+%\font\wmweb=''Baskerville:color=FF1493'' at 8pt
+%{\wm 
+%	\begin{textblock}{1}(0,0)
+%		\rotatebox{-90}{\parbox{500mm}{
+%			Typeset by Alessandro Plasmati with \XeTeX\  \today\ for 
+%			{\wmweb \href{http://www.aleplasmati.comuv.com}{aleplasmati.comuv.com}}
+%		}
+%	}
+%	\end{textblock}
+%}
+
+\pagestyle{empty} % non-numbered pages
+
+\font\fb=''[cmr10]'' %for use with \LaTeX command
+
+%--------------------TITLE-------------
+\par{\centering
+		{\Huge   \textsc{Маневич Ефим Витальевич}
+	}\bigskip\par}
+
+%--------------------SECTIONS-----------------------------------
+%Section: Personal Data
+
+\section{Персональная информация}
+
+\begin{tabular}{rl}
+    \textsc{Дата рожденья:} &  4 мая 1967 г. \\
+    \textsc{Адрес:}   & Москва, Коптевский бульвар 16, корп.2\\
+	\textsc{}   & Проживаю в деревне Владимирской области\\
+    \textsc{Телефон:}     & +7 (904) 858-07-44\\
+    \textsc{email:}     & \href{mailto:efimmanevich@gmail.com}{efimmanevich@gmail.com}\\
+    \textsc{github:} & \href{https://github.com/flightphone}{https://github.com/flightphone} \\
+%\textsc{RFC:} & ROTR911018-1Y5 \\
+%\textsc{CURP:} & ROTR911018HDFMRB06 \
+    
+\end{tabular}
+
+%Section: Work Experience at the top
+\section{Опыт работы}
+\begin{tabular}{r|p{11cm}}
+
+
+\textsc{В настоящее время}& \textsc{AO "Ю-Ти-Джи Групп" } \\\textsc{}&\emph{Программист C\#, MS SQL Server}\\&
+\footnotesize{
+Разработка и сопровождение программы для учёта авиационных услуг, C\#, MS SQL Server (desktop). 
+Разработка Web версии и служебных сервисов, .net core, Vue.js, HTML, CSS, Docker, MS SQL Server, PostgreSQL.
+Сопровождение программы, руководство группой технологов, постановка задачи, контроль исполнения.
+Координация с внешним потребителем данных, написание программ обработки потоков информации, 
+парсеров в том числе с элементами ИИ (нечеткий поиск). Написание документации к некоторым модулям программы, LaTeX.
+\href{https://flightphone.github.io/uSmart.pdf}{Свидетельство uSmart}, \href{https://flightphone.github.io/uKnow.pdf}{Свидетельство uKnow}
+}\\\multicolumn{2}{c}{}\\
+
+\textsc{2002-2012}& \textsc{ООО "НИССА КОМПАНИ" } \\\textsc{}&\emph{Программист C\#, MS SQL Server, Delphi}\\&
+\footnotesize{Разработка и сопровождение независимых дополнительных модулей для программы \href{https://www.accpacnet.com/}{Accpac ERP}. 
+Написание модулей в виде desktop приложения, Delphi, C\#, MS SQL Server. 
+Написание WEB модулей, ASP.NET, JavaScript, HTML, CSS. 
+ 
+}\\\multicolumn{2}{c}{}\\
+
+\textsc{1999 - 2002}& \textsc{ЗАО "ЛАЙТНЭТ КОНСАЛТИНГ"} \\\textsc{}&\emph{программист-аналитик}\\&
+\footnotesize{Разработка программного комплекса для федерального казначейства, 
+Delphi, MS SQL Server, макросы Excel, Access
+
+}\\\multicolumn{2}{c}{}\\
+
+\textsc{1996-1999}& \textsc{Министерство экономики Российской Федерации}  \\\textsc{}&\emph{ведущий специалист}\\&
+\footnotesize{Сопровождение и разработка программ для внутреннего делопроизводства. 
+Разработка программы конвертера для некоторых форматов файлов программ прежнего поколения, C++, макросы Excel, Access
+}\\\multicolumn{2}{c}{} \\
+ 
+ 
+\textsc{1992-1996} & \textsc{НТО "Итин"} \\&\emph{младший научный сотрудник}\\&
+\footnotesize{Написание программ для промышленных расчетов численными методами, FORTRAN, C++}\\\multicolumn{2}{c}{} \\
+\end{tabular}
+
+%Section: Education
+\section{Образование}
+\begin{tabular}{rl}	
+\\
+ \textsc{1984-1992} & Москва, \textbf{Академия нефти и газа им.Губкина}\\
+ \textsc{14.12.2021-22.02.2022} & \textbf{Яндекс.Практикум, Алгоритмы и структуры данных.} \footnotesize{\href{https://flightphone.github.io/Efim_Manevich_20222AL00053R.pdf}{Сертификат}}\\
+\end{tabular}
+
+
+\section{Навыки}
+\begin{tabular}{rl}
+ Advanced:& \textsc{C\#}, SQL (MS SQL Server, PostgreSQL), JavaScript, .NET, .NET Core, Git\\
+ Middle:& \textsc{C++}, Node.js, Vue, React, Angular,  {\fb \LaTeX}, Ubuntu, Docker \\
+\end{tabular}
+
+\section{Интересы и хобби}
+\href{https://lichess.org/@/Yukin}{Шахматы}, \href{https://codeforces.com/profile/yukin}{спортивное программирование}, 
+ \href{https://leetcode.com/efimmanevich/}{LeetCode}, фитнес  
+
+\end{document}
+
