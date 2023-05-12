@@ -1,0 +1,136 @@
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1170px;
+
+    }
+}
+
+.col-12 {
+    border: 1px solid red;
+    padding: 0;
+
+}
+
+.title {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 82px;
+
+    color: #373737;
+    z-index: 10;
+
+}
+
+.main-nav {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+
+    letter-spacing: 0.07em;
+
+    color: #000000;
+}
+
+.button {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 22px;
+    letter-spacing: 0.12em;
+}
+
+.butsize {
+    width: 212px;
+    height: 66px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.leftsq {
+    position: absolute;
+    width: 50%;
+    height: 1029px;
+    left: 50%;
+    top: 0px;
+
+    background: #D9E3EF;
+    z-index: -1;
+
+}
+
+.logosvg {
+    position: absolute;
+    width: 100%;
+
+    left: 0px;
+    top: 244px;
+
+    /* background: rgba(51, 68, 94, 0.04); */
+}
+
+.logo {
+    width: 106px;
+    height: 41px;
+    left: 379px;
+    top: 50px;
+
+    border: 2px solid #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+
+    letter-spacing: 0.1em;
+
+    color: #000000;
+}
+
+.hat {
+    position: absolute;
+    height: 967px;
+    width: 968px;
+
+    left: 280px;
+    top: 62px;
+
+    background: url(/imgs/hat.png);
+
+    z-index: -1;
+}
+
+.water {
+    position: absolute;
+    width: 895px;
+    height: 393px;
+    left: 0px;
+    top: 1073px;
+    margin-left: -231;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 288px;
+    line-height: 392px;
+    /* identical to box height */
+
+    text-align: right;
+    text-transform: uppercase;
+
+    color: #F2F2F2;
+
+}
