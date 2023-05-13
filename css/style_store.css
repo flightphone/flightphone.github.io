@@ -6,7 +6,7 @@
 }
 
 .col-12 {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     padding: 0;
 
 }
@@ -132,5 +132,41 @@
     text-transform: uppercase;
 
     color: #F2F2F2;
+    z-index: -1;
 
+}
+
+.piople1 {
+    position: absolute;
+    width: 276px;
+    height: 501px;
+    left: 283px;
+    bottom: 0;
+    background: url(/imgs/people1.svg);
+}
+
+.collection {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 54px;
+    /* identical to box height */
+
+
+    color: #373737;
+}
+
+.collection2 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    /* identical to box height */
+
+
+    color: #373737;
+
+   
 }
