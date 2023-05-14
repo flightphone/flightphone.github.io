@@ -457,3 +457,25 @@ a {
     text-align: center;
     color: #FFFFFF;
 }
+
+.carousel-indicators [data-bs-target] {
+    margin-left: 12px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid black;
+    
+}
+.carousel-indicators .active {
+    background: #4F4F4F;
+}
+/* button.active {
+    
+} */
+
+.carousel-indicators {
+    position: relative;
+    margin-left: 0;
+    color: red;
+    /* background-color: blue; */
+}

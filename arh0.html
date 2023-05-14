@@ -79,6 +79,11 @@
             </div>
         </div>
         <div class="row" style="margin-top: 40px;">
+            <!-- <div id="slider2" class="carousel slide w-100" data-bs-touch="false" data-bs-interval="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active"> -->
+
+
             <div class="col-lg-7 col-sm-12" style="background: url(/img/tit1.png);
             height: 490px;">
                 <div class="piptitle" style="margin-left: 60px;margin-top: 248px;">
@@ -106,10 +111,13 @@
                     <div class="picbut" style="margin-left: 30px;margin-top: 30px;">
                         Смотреть
                     </div>
-
                 </div>
-
             </div>
+            <!-- </div>
+                </div>
+            </div> -->
+
+
             <div style="margin-top: 120px;">
                 <img src="/img/modernbu.svg" alt="">
             </div>
@@ -194,15 +202,65 @@
     </div>
 
     <section>
-        <div class="mapimage" style="margin-top: 86px;height: 618px;width: 100%;display: inline-block;">
-        <img src="/img/news.svg" alt=""  style="display:block; margin: 100px auto;cursor: pointer;">
-        <div class="pictit3" style="width: 862px;margin: 75px auto;">
-            Самые необычные здания во всем мире
+        <div id="slider1" class="carousel slide w-100" data-bs-touch="false" data-bs-interval="false"
+            style="margin-top: 86px;">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="mapimage" style="height: 618px;width: 100%;display: inline-block;">
+                        <img src="/img/news.svg" alt="" style="display:block; margin: 100px auto;cursor: pointer;">
+                        <div class="pictit3" style="width: 862px;margin: 75px auto;">
+                            Самые необычные здания во всем мире
+                        </div>
+                        <div class="picbut" style="margin: 40px auto;">
+                            Смотреть
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="mapimage" style="height: 618px;width: 100%;display: inline-block;">
+                        <img src="/img/news.svg" alt="" style="display:block; margin: 100px auto;cursor: pointer;">
+                        <div class="pictit3" style="width: 862px;margin: 75px auto;">
+                            Самые необычные здания во всем мире
+                        </div>
+                        <div class="picbut" style="margin: 40px auto;">
+                            Смотреть
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div style="height: 618px;"></div>
+                </div>
+                <div class="carousel-item">
+                    <div style="height: 618px;"></div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#slider1" data-bs-slide="prev">
+                <img src="/img/prev.svg" alt="">
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#slider1" data-bs-slide="next">
+                <img src="/img/next.svg" alt="">
+            </button>
+
+            <div class="d-flex justify-content-center align-items-center carousel-indicators"
+                style="margin-top: 40px;width: 100%;z-index: 10;">
+                <button type="button" data-bs-target="#slider1" data-bs-slide-to="0" class="active b14"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#slider1" data-bs-slide-to="1" aria-label="Slide 2"
+                    class="b14"></button>
+                <button type="button" data-bs-target="#slider1" data-bs-slide-to="2" aria-label="Slide 3"
+                    class="b14"></button>
+                <button type="button" data-bs-target="#slider1" data-bs-slide-to="3" aria-label="Slide 4"
+                    class="b14"></button>
+            </div>
+
         </div>
-        <div class="picbut" style="margin: 40px auto;">
-            Смотреть
-        </div>
-        </div>
+        <!--  -->
+
+
+
     </section>
 
     <section style="margin-top: 140px;">
@@ -210,7 +268,7 @@
             <div class="row">
                 <div class="col-12 d-flex justify-content-center flex-column align-items-center">
                     <div class="subscribe">
-                        Подпишитесь  на нашу e-mail рассылку
+                        Подпишитесь на нашу e-mail рассылку
                     </div>
                     <div style="margin-top: 30px;" class="d-flex align-items-center">
                         <input type="text" class="inputemail" placeholder="Введите Ваш email" style="padding: 3px;">
@@ -260,7 +318,7 @@
     </footer>
 
 
-    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
 </body>
 
 </html>

@@ -34,6 +34,7 @@
     letter-spacing: 0.07em;
 
     color: #000000;
+    cursor: pointer;
 }
 
 .button {
@@ -98,6 +99,7 @@
     letter-spacing: 0.1em;
 
     color: #000000;
+    cursor: pointer;
 }
 
 .hat {
@@ -145,6 +147,15 @@
     background: url(/imgs/people1.svg);
 }
 
+.piople2 {
+    width: 394px;
+    height: 545px;
+    margin-left: 120;
+    margin-top: -49px;
+    background: url(/imgs/office1.png);
+}
+
+
 .collection {
     font-family: 'Open Sans';
     font-style: normal;
@@ -168,5 +179,84 @@
 
     color: #373737;
 
-   
+
+}
+
+footer {
+    background: #D9E3EF;
+    margin-top: 193px;
+}
+
+.footer {
+
+    width: 100%;
+    height: 139px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+
+}
+
+.order {
+    width: 264px;
+    height: 391px;
+
+    /* background: #FFFFFF; */
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.order:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
+}
+
+.orderpic {
+    width: 220px;
+    height: 200px;
+
+}
+
+.ordertext {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    /* identical to box height */
+
+
+    color: #000000;
+}
+
+.price {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    /* identical to box height */
+    color: #C4C4C4;
+}
+
+.sale {
+    width: 177px;
+    height: 53px;
+    background: #373737;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer
+}
+
+.hidebut {
+    display: none
+}
+
+.order:hover .hidebut {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
