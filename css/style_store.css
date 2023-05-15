@@ -154,6 +154,13 @@
     margin-top: -49px;
     background: url(/imgs/office1.png);
 }
+.people3 {
+    width: 325px;
+    height: 632px;
+    margin-left: 78px;
+    margin-top: -70px;
+    background: url(/imgs/women1.png);
+}
 
 
 .collection {
@@ -260,3 +267,24 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
+.carousel-indicators [data-bs-target] {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #C4C4C4;
+    border-top: none;
+    border-bottom: none;
+    margin-left: 10px;
+    
+} 
+
+.carousel-indicators .active {
+    background: #373737;
+}
+
+/* .carousel-indicators
+{
+    position: relative;
+} */
+
