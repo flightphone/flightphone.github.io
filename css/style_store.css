@@ -154,6 +154,7 @@
     margin-top: -49px;
     background: url(/imgs/office1.png);
 }
+
 .people3 {
     width: 325px;
     height: 632px;
@@ -269,15 +270,16 @@ footer {
 }
 
 .carousel-indicators [data-bs-target] {
-    width: 9px;
-    height: 9px;
+    width: 7px;
+    height: 7px;
     border-radius: 50%;
     background: #C4C4C4;
     border-top: none;
     border-bottom: none;
-    margin-left: 10px;
-    
-} 
+    margin-left: 9px;
+    margin-right: 0;
+
+}
 
 .carousel-indicators .active {
     background: #373737;
@@ -288,3 +290,21 @@ footer {
     position: relative;
 } */
 
+.decor {
+    position: absolute;
+    width: 214px;
+    height: 393px;
+    left: -36px;
+    bottom: 0px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 288px;
+    line-height: 392px;
+    /* identical to box height */
+
+    text-align: right;
+
+    color: #F2F2F2;
+}
