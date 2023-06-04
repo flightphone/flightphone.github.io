@@ -37,6 +37,17 @@
     cursor: pointer;
 }
 
+.infosize {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+    color: #000000;
+
+}
+
 .button {
     font-family: "Open Sans", sans-serif;
     font-style: normal;
@@ -61,6 +72,18 @@
     width: 50%;
     height: 1029px;
     left: 50%;
+    top: 0px;
+
+    background: #D9E3EF;
+    z-index: -1;
+
+}
+
+.rightsq {
+    position: absolute;
+    width: 50%;
+    height: 1000px;
+    right: 50%;
     top: 0px;
 
     background: #D9E3EF;
@@ -190,6 +213,19 @@
 
 }
 
+.collection3 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 54px;
+    /* identical to box height */
+
+    text-transform: capitalize;
+
+    color: #48494D;
+}
+
 footer {
     background: #D9E3EF;
     margin-top: 193px;
@@ -269,6 +305,8 @@ footer {
     align-items: center;
 }
 
+
+
 .carousel-indicators [data-bs-target] {
     width: 7px;
     height: 7px;
@@ -281,8 +319,28 @@ footer {
 
 }
 
+.carousel-indicators [pic-style] {
+    width: 156px;
+    height: 133px;
+    border-radius: 0%;
+    background: none;
+    border-top: none;
+    border-bottom: none;
+    margin-left: 0px;
+    margin-right: 20px;
+    opacity: 1.0;
+
+}
+
+
 .carousel-indicators .active {
     background: #373737;
+}
+
+.carousel-indicators [pic-style].active {
+    background: none;
+    border-radius: 0%;
+    border: 2px solid rgba(55, 55, 55, 0.5);
 }
 
 /* .carousel-indicators
@@ -307,4 +365,41 @@ footer {
     text-align: right;
 
     color: #F2F2F2;
+}
+
+.salecor {
+    width: 658px;
+    height: 499px;
+
+}
+
+.salepic {
+    width: 658px;
+    height: 499px;
+}
+
+.sizeitem {
+    width: 41px;
+    height: 41px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 34px;
+    cursor: pointer;
+}
+
+.sizeitem:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tablesize {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+
+
+    color: #7CBCEC
 }

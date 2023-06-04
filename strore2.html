@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/style_store.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open Sans"
+      rel="stylesheet"
+    />
+    <title>DOLLY</title>
+  </head>
+
+  <body style="position: relative">
+    <div class="rightsq"></div>
+
+    <!--<img src="/imgs/logo.svg" alt="" class="logosvg">-->
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div style="width: 100%; margin-top: 50px; display: flex">
+            <div
+              style="width: 50%"
+              class="d-flex justify-content-between align-items-center"
+            >
+              <div class="logo">DOLLY</div>
+              <div class="main-nav">Одежда</div>
+              <div class="main-nav">Обувь</div>
+              <div class="main-nav">Аксессуары</div>
+            </div>
+            <div
+              style="width: 50%"
+              class="d-flex justify-content-end align-items-center"
+            >
+              <a href=""
+                ><img src="/imgs/v1.svg" alt="" style="margin-right: 20px"
+              /></a>
+              <a href=""
+                ><img src="/imgs/v2.svg" alt="" style="margin-right: 20px"
+              /></a>
+              <a href=""><img src="/imgs/v3.svg" alt="" /></a>
+            </div>
+          </div>
+
+          <div
+            style="margin-top: 148px"
+            class="d-flex justify-content-start align-items-start"
+          >
+            <div class="salecor" style="position: relative">
+              <div
+                style="
+                  position: absolute;
+                  left: 20px;
+                  top: 215px;
+                  cursor: pointer;
+                  z-index: 10;
+                "
+                data-bs-target="#carouselSale"
+                data-bs-slide="prev"
+              >
+                <img src="/imgs/Back.svg" alt="" />
+              </div>
+              <div
+                style="
+                  position: absolute;
+                  right: 20px;
+                  top: 215px;
+                  cursor: pointer;
+                  z-index: 10;
+                "
+                data-bs-target="#carouselSale"
+                data-bs-slide="next"
+              >
+                <img src="/imgs/next.svg" alt="" />
+              </div>
+
+              <div
+                id="carouselSale"
+                class="carousel slide salecor"
+                data-bs-touch="false"
+                data-bs-interval="false"
+                style="position: relative"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div
+                      style="background: url(/imgs/shoes1.png)"
+                      class="salepic"
+                    ></div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <div
+                      style="background: url(/imgs/shoes1.png)"
+                      class="salepic"
+                    ></div>
+                  </div>
+                  <div class="carousel-item">
+                    <div
+                      style="background: url(/imgs/shoes1.png)"
+                      class="salepic"
+                    ></div>
+                  </div>
+                </div>
+
+                <div
+                  class="carousel-indicators d-flex justify-content-start"
+                  style="
+                    position: absolute;
+                    bottom: -167px;
+                    left: 0px;
+                    margin: 0;
+                    width: auto;
+                    padding: 0;
+                  "
+                >
+                  <div
+                    data-bs-target="#carouselSale"
+                    pic-style="yes"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                    style="background: url(/imgs/sh1.png)"
+                  ></div>
+                  <div
+                    data-bs-target="#carouselSale"
+                    style="background: url(/imgs/sh2.png)"
+                    pic-style="yes"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></div>
+                  <div
+                    data-bs-target="#carouselSale"
+                    style="background: url(/imgs/sh1.png)"
+                    pic-style="yes"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></div>
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-left: 73px">
+              <div class="collection3" style="color: #48494d">
+                Туфли Лакированнные
+              </div>
+              <div class="collection" style="margin-top: 12px">4 999 ₽</div>
+              <div style="margin-top: 51px">
+                <img src="/imgs/Star.svg" style="margin-right: 5px" />
+                <img src="/imgs/Star.svg" style="margin-right: 5px" />
+                <img src="/imgs/Star.svg" style="margin-right: 5px" />
+                <img src="/imgs/Star.svg" style="margin-right: 5px" />
+                <img src="/imgs/Star1.svg" />
+                <a href="" style="margin-left: 45px">
+                  <img src="/imgs/v1.svg" alt="" /><span
+                    class="infosize"
+                    style="margin-left: 15px"
+                    >в избранное</span
+                  >
+                </a>
+              </div>
+              <div
+                style="margin-top: 50px"
+                class="d-flex justify-content-start align-items-center"
+              >
+                <div class="infosize">Размеры:</div>
+                <div class="sizeitem infosize">32</div>
+                <div class="sizeitem infosize">34</div>
+                <div class="sizeitem infosize">36</div>
+                <div class="sizeitem infosize">38</div>
+              </div>
+              <div class="tablesize" style="margin-top: 14px">
+                Таблица размеров
+              </div>
+              <div
+                style="margin-top: 34px"
+                class="d-flex justify-content-start align-items-center infosize"
+              >
+                <div>Цвета:</div>
+                <div
+                  style="
+                    width: 15px;
+                    height: 15px;
+                    background: #cecbc8;
+                    margin-left: 17px;
+                  "
+                ></div>
+                <div
+                  style="
+                    width: 15px;
+                    height: 15px;
+                    background: #ffffff;
+                    border: 1px solid #d6d6d6;
+                    margin-left: 9px;
+                  "
+                ></div>
+                <div
+                  style="
+                    width: 15px;
+                    height: 15px;
+                    background: #373737;
+                    margin-left: 9px;
+                  "
+                ></div>
+              </div>
+              <div class="infosize d-flex" style="margin-top: 15px">
+                <div style="width: 75px">Состав:</div>
+                <div>Искусственная замша</div>
+              </div>
+              <div class="infosize d-flex" style="margin-top: 15px">
+                <div style="width: 75px">Сезон:</div>
+                <div>Демисезон</div>
+              </div>
+
+              <div class="tablesize" style="margin-top: 12px">
+                <a href="#">Подробнее</a>
+              </div>
+
+              <div class="sale button" style="margin-top: 50px; color: white">
+                купить
+              </div>
+            </div>
+          </div>
+
+          <!------------------------------------------>
+
+          <div
+            class="collection d-flex justify-content-center"
+            style="margin-top: 406px; margin-left: -35px; margin-right: -35px"
+          >
+            С этим покупают
+          </div>
+          <div
+            class="collection d-flex justify-content-evenly w-100"
+            id="car"
+            style="margin-top: 40px; position: relative"
+          >
+            <div
+              style="
+                position: absolute;
+                left: -35px;
+                top: 122px;
+                cursor: pointer;
+              "
+              data-bs-target="#carouselExampleControlsNoTouching"
+              data-bs-slide="prev"
+            >
+              <img src="/imgs/Back.svg" alt="" />
+            </div>
+            <div
+              style="
+                position: absolute;
+                right: -35px;
+                top: 122px;
+                cursor: pointer;
+              "
+              data-bs-target="#carouselExampleControlsNoTouching"
+              data-bs-slide="next"
+            >
+              <img src="/imgs/next.svg" alt="" />
+            </div>
+
+            <div
+              id="carouselExampleControlsNoTouching"
+              class="carousel slide w-100"
+              data-bs-touch="false"
+              data-bs-interval="false"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="collection d-flex justify-content-evenly w-100">
+                    <div class="order">
+                      <div
+                        class="orderpic"
+                        style="background: url(/imgs/black-rucksack2.png)"
+                      ></div>
+                      <div class="ordertext" style="margin-top: 11px">
+                        Рюкзак кантри
+                      </div>
+                      <div class="price" style="margin-top: 11px">2 999 ₽</div>
+                      <div
+                        class="sale button hidebut"
+                        style="margin-top: 25px; color: white"
+                      >
+                        купить
+                      </div>
+                    </div>
+                    <div class="order">
+                      <div
+                        class="orderpic"
+                        style="background: url(/imgs/shoot.png)"
+                      ></div>
+                      <div class="ordertext" style="margin-top: 11px">
+                        Туфли лакированные
+                      </div>
+                      <div class="price" style="margin-top: 11px">4 999 ₽</div>
+                      <div
+                        class="sale button hidebut"
+                        style="margin-top: 25px; color: white"
+                      >
+                        купить
+                      </div>
+                    </div>
+                    <div class="order">
+                      <div
+                        class="orderpic"
+                        style="background: url(/imgs/mockups2.png)"
+                      ></div>
+                      <div class="ordertext" style="margin-top: 11px">
+                        Косметичка
+                      </div>
+                      <div class="price" style="margin-top: 11px">1 999 ₽</div>
+                      <div
+                        class="sale button hidebut"
+                        style="margin-top: 25px; color: white"
+                      >
+                        купить
+                      </div>
+                    </div>
+                    <div class="order">
+                      <div
+                        class="orderpic"
+                        style="background: url(/imgs/clock.png)"
+                      ></div>
+                      <div class="ordertext" style="margin-top: 11px">
+                        Часы наручные
+                      </div>
+                      <div class="price" style="margin-top: 11px">5 000 ₽</div>
+                      <div
+                        class="sale button hidebut"
+                        style="margin-top: 25px; color: white"
+                      >
+                        купить
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="collection d-flex justify-content-evenly w-100">
+                    <div class="order">
+                      <div
+                        class="orderpic"
+                        style="background: url(/imgs/shoot.png)"
+                      ></div>
+                      <div class="ordertext" style="margin-top: 11px">
+                        Туфли лакированные
+                      </div>
+                      <div class="price" style="margin-top: 11px">4 999 ₽</div>
+                      <div
+                        class="sale button hidebut"
+                        style="margin-top: 25px; color: white"
+                      >
+                        купить
+                      </div>
+                    </div>
+
+                    <div class="order">
+                      <div
+                        class="orderpic"
+                        style="background: url(/imgs/black-rucksack2.png)"
+                      ></div>
+                      <div class="ordertext" style="margin-top: 11px">
+                        Рюкзак кантри
+                      </div>
+                      <div class="price" style="margin-top: 11px">2 999 ₽</div>
+                      <div
+                        class="sale button hidebut"
+                        style="margin-top: 25px; color: white"
+                      >
+                        купить
+                      </div>
+                    </div>
+
+                    <div class="order">
+                      <div
+                        class="orderpic"
+                        style="background: url(/imgs/clock.png)"
+                      ></div>
+                      <div class="ordertext" style="margin-top: 11px">
+                        Часы наручные
+                      </div>
+                      <div class="price" style="margin-top: 11px">5 000 ₽</div>
+                      <div
+                        class="sale button hidebut"
+                        style="margin-top: 25px; color: white"
+                      >
+                        купить
+                      </div>
+                    </div>
+
+                    <div class="order">
+                      <div
+                        class="orderpic"
+                        style="background: url(/imgs/mockups2.png)"
+                      ></div>
+                      <div class="ordertext" style="margin-top: 11px">
+                        Косметичка
+                      </div>
+                      <div class="price" style="margin-top: 11px">1 999 ₽</div>
+                      <div
+                        class="sale button hidebut"
+                        style="margin-top: 25px; color: white"
+                      >
+                        купить
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="collection d-flex justify-content-evenly w-100">
+                    <div class="order">
+                      <div
+                        class="orderpic"
+                        style="background: url(/imgs/black-rucksack2.png)"
+                      ></div>
+                      <div class="ordertext" style="margin-top: 11px">
+                        Рюкзак кантри
+                      </div>
+                      <div class="price" style="margin-top: 11px">2 999 ₽</div>
+                      <div
+                        class="sale button hidebut"
+                        style="margin-top: 25px; color: white"
+                      >
+                        купить
+                      </div>
+                    </div>
+                    <div class="order">
+                      <div
+                        class="orderpic"
+                        style="background: url(/imgs/shoot.png)"
+                      ></div>
+                      <div class="ordertext" style="margin-top: 11px">
+                        Туфли лакированные
+                      </div>
+                      <div class="price" style="margin-top: 11px">4 999 ₽</div>
+                      <div
+                        class="sale button hidebut"
+                        style="margin-top: 25px; color: white"
+                      >
+                        купить
+                      </div>
+                    </div>
+                    <div class="order">
+                      <div
+                        class="orderpic"
+                        style="background: url(/imgs/mockups2.png)"
+                      ></div>
+                      <div class="ordertext" style="margin-top: 11px">
+                        Косметичка
+                      </div>
+                      <div class="price" style="margin-top: 11px">1 999 ₽</div>
+                      <div
+                        class="sale button hidebut"
+                        style="margin-top: 25px; color: white"
+                      >
+                        купить
+                      </div>
+                    </div>
+                    <div class="order">
+                      <div
+                        class="orderpic"
+                        style="background: url(/imgs/clock.png)"
+                      ></div>
+                      <div class="ordertext" style="margin-top: 11px">
+                        Часы наручные
+                      </div>
+                      <div class="price" style="margin-top: 11px">5 000 ₽</div>
+                      <div
+                        class="sale button hidebut"
+                        style="margin-top: 25px; color: white"
+                      >
+                        купить
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="butsize"
+            style="
+              width: 250px;
+              margin: 40px auto;
+              border: 1px solid #373737;
+              color: #373737;
+            "
+          >
+            <div class="button">смотреть еще</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="footer">
+              <div class="logo">DOLLY</div>
+
+              <div
+                class="d-flex justify-content-between align-items-center"
+                style="
+                  width: 550px;
+                  text-transform: uppercase;
+                  position: absolute;
+                  right: 100px;
+                "
+              >
+                <div class="main-nav">доставка</div>
+                <div class="main-nav">оплата</div>
+                <div class="main-nav">контакты</div>
+                <div class="main-nav">вопросы</div>
+                <div class="main-nav">отзывы</div>
+              </div>
+
+              <div style="position: absolute; right: 0px">
+                <a href=""><img src="/imgs/g3.svg" alt="" /></a>
+                <a href="" style="margin-left: 8px"
+                  ><img src="/imgs/g2.svg" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="/js/bootstrap.min.js"></script>
+  </body>
+</html>
