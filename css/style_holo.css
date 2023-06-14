@@ -3,6 +3,7 @@ body {
     background-color: #F5F2ED;
     margin: 0;
     padding: 0;
+    zoom: 66%;
 }
 
 a:link {
@@ -71,12 +72,19 @@ a:visited {
 }
 
 .philosophy {
-    font-size: 18px;
-    line-height: 26px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 120%;
+    /* identical to box height, or 66px */
+
     text-align: center;
-    /* текст выравнивается по центру */
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
 
     color: #FFFFFF;
+
 }
 
 .service {
@@ -138,6 +146,9 @@ h4 {
     color: #564A5E;
 }
 
+
+
+
 .decorative-text {
     font-family: "Meddon";
     font-size: 30px;
@@ -181,40 +192,48 @@ h4 {
     height: 862px;
     background-color: #564A5E;
     background-image: url(/imgd/pattern600X600.png);
+    z-index: -1;
 }
 
 .rect2 {
-    width: 51.5%;
-    height: 38.625vw;
-
+    width: 52%;
     background: #564A5E;
-    position: absolute;
-    margin-top: 268px;
-    left: 0px;
-    padding-left: 168px;
+    padding-left: 50px;
+    padding-top: 72px;
+    margin-bottom: 0px;
 
+}
+
+.aboutrect {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding: 0;
 }
 
 .promo {
-    position: absolute;
     width: 75%;
-    left: 12.5%;
-    margin-top: 72px;
+    height: 720px;
+    margin: -288px auto 268px;
+    z-index: 10;
+
 }
 
 .main {
-    width: 100%;
+    width: 75%;
     display: flex;
     justify-content: space-between;
-    margin-top: calc(408px + 38.625vw);
+    flex-wrap: wrap;
+    margin: 140px auto;
 
 }
 
 .column {
     display: flex;
     flex-direction: column;
-    justify-content: end;
-    
+    justify-content: space-between;
+    width: 48%;
 
 }
 
@@ -228,12 +247,190 @@ h4 {
     align-items: center;
     padding: 0;
     margin: 0;
-   
+
 }
 
 .label {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
+}
+
+.aboutphoto {
+    width: 52%;
+    position: absolute;
+    top: -118px;
+    right: 0
+}
+
+.button {
+    width: 395px;
+    height: 83px;
+    border: 2px solid #5D002C;
+    margin: 108px auto;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 146.28%;
+    /* or 18px */
+
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #5D002C;
+}
+
+.rect3 {
+    height: 866px;
+    width: 100%;
+    background-image: url(/imgd/bg-philosophy.png);
+    margin-top: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+}
+
+.info2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.service {
+    font-family: 'Meddon';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 63px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #C8B091;
+}
+
+.service2 {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 120%;
+    /* identical to box height, or 66px */
+
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+
+    color: #564A5E;
+
+}
+
+.service3 {
+    width: 75%;
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+}
+
+.itemserv {
+    width: 50%;
+    display: flex;
+    margin-bottom: 92px;
+}
+
+.itemnum {
+    position: relative;
+    width: 180px;
+    height: 140px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 101.66%;
+    /* or 102px */
+
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    text-transform: uppercase;
+
+    color: #E5D4BE;
+
+    transform: rotate(-90deg);
+    /* border: 1px solid black; */
+}
+
+.servtext {
+    display: flex;
+    flex-direction: column;
+    margin-left: 17px;
+    width: calc(100% - 160px);
+}
+
+.rect6 {
+    position: absolute;
+    width: 85px;
+    height: 78px;
+    left: 73px;
+    top: 45px;
+    z-index: -1;
+    background: #564A5E;
+}
+
+.servtitle {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 101.66%;
+    /* or 33px */
+
+
+    color: #564A5E;
+}
+
+.servinfo {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+
+    color: rgba(155, 127, 129, 0.97);
+}
+
+@media (max-width: 750px) {
+    .column {
+        width: 100%;
+    }
+
+    .main {
+        width: 90%;
+    }
+
+    .aboutrect {
+        width: 90%;
+    }
+
+    .promo {
+        width: 100%;
+    }
+
+    .rect2 {
+        width: 100%;
+    }
+
+    .aboutphoto {
+        width: 100%;
+        position: relative;
+        top: 0;
+        margin-top: 10px;
+    }
 }

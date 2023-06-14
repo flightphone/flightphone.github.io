@@ -1,0 +1,53 @@
+@import url('https://fonts.cdnfonts.com/css/source-serif-pro');
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    height: 185px;
+    /* border: 1px solid red; */
+}
+
+section {
+    display: flex;
+    background: #FFF7EC;
+}
+
+.leftpanel {
+    width: 266px;
+    height: 723px;
+    background: #F9F4DB;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-top: 10px;
+
+}
+
+.rightpanel {
+    flex-grow: 1;
+    /* border: 1px solid red; */
+
+}
+
+.label1 {
+    font-family: 'Source Serif Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: -0.045em;
+
+    color: #550D0E;
+}
+
+.img7 {
+    width: 165px;
+    height: 162px;
+    background: url(/imgb/image7.svg);
+    margin-top: 20px;
+}
