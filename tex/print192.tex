@@ -1,0 +1,179 @@
+\documentclass[14pt]{article}
+\usepackage{adjustbox}
+\usepackage{float}
+\usepackage{xltxtra}
+\usepackage{polyglossia}
+
+
+
+\setmainfont{DejaVu Sans Mono}
+\setromanfont{DejaVu Serif} 
+\setsansfont{DejaVu Sans} 
+\setmonofont{DejaVu Sans Mono}
+
+\usepackage{hhline}
+\usepackage{multicol}
+\usepackage{multirow}
+
+\usepackage{pstricks}
+\usepackage{pst-barcode}
+
+\setlength\parindent{0pt}
+\pagestyle{empty}
+\renewcommand{\arraystretch}{1.0}
+
+\usepackage[paperheight=27.94cm,paperwidth=21.59cm,left=1.27cm,right=1.27cm,top=0.794cm,bottom=1.27cm]{geometry}
+\begin{document}
+\raggedright      
+\begin{table}[H]
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{p{3.78cm}p{0.88cm}p{7.04cm}p{7.34cm}}
+\multicolumn{2}{p{4.66cm}}{
+\begin{pspicture}(25mm,25mm)
+\psbarcode{http://www.sharelatex.com}{eclevel=H width=1.0 height=1.0}{qrcode}
+\end{pspicture}
+} & 
+\multicolumn{2}{p{14.38cm}}{\Large{Payment Request Form}} \\ 
+\multicolumn{3}{p{11.70cm}}{\raggedright { }} & 
+\multicolumn{1}{p{7.34cm}}{\par \small{\textbf{\normalsize{Date:}}}[paydate] \par Form\#: No.} \\ 
+\multicolumn{1}{p{3.78cm}}{Payable To (with address):} & 
+\multicolumn{2}{p{7.92cm}}{\par \raggedright {[customer]
+}\par \raggedright {[company]}\par \raggedright {[street]}\par \raggedright {[city],[st],[zip]}\par \raggedright {[phone]}\par \raggedright {[custid] No.}} & 
+\multicolumn{1}{p{7.34cm}}{\par  } \\ 
+\end{tabular}
+\end{adjustbox}
+\end{table}
+\raggedright \par \raggedright {\small{ }}
+\begin{table}[H]
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{p{6.35cm}p{6.35cm}p{6.35cm}}
+\hhline{---}
+\multicolumn{1}{|p{6.35cm}|}{\par \textbf{Vendor invoice \#}} & 
+\multicolumn{1}{|p{6.35cm}|}{\par Check No.
+} & 
+\multicolumn{1}{|p{6.35cm}|}{\par \textbf{Date of invoice}} \\ 
+\hhline{---}
+\multicolumn{1}{|p{6.35cm}|}{\par \raggedright {[id]}} & 
+\multicolumn{1}{|p{6.35cm}|}{\par \raggedright { }} & 
+\multicolumn{1}{|p{6.35cm}|}{\par \raggedright {[paydate]}} \\ 
+\hhline{---}
+\end{tabular}
+\end{adjustbox}
+\end{table}
+\raggedright \par \raggedright {\small{ }}
+\raggedright \par \raggedright {\small{ }}
+\raggedright \par \raggedright {\small{ }}
+\begin{table}[H]
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{p{2.04cm}p{2.71cm}p{4.76cm}p{3.20cm}p{3.19cm}p{3.15cm}}
+\hhline{------}
+\multicolumn{1}{|p{2.04cm}|}{\par \normalsize{\textbf{Qty}}} & 
+\multicolumn{1}{|p{2.71cm}|}{\par Item \#
+} & 
+\multicolumn{1}{|p{4.76cm}|}{\par Description
+} & 
+\multicolumn{1}{|p{3.20cm}|}{\par Unit Price
+} & 
+\multicolumn{1}{|p{3.19cm}|}{\par Discount
+} & 
+\multicolumn{1}{|p{3.15cm}|}{\par Line Total
+} \\ 
+\hhline{------}
+\multicolumn{1}{|p{2.04cm}|}{\par \centering {\normalsize{[qty]}}} & 
+\multicolumn{1}{|p{2.71cm}|}{\par \centering {\normalsize{[item]}}} & 
+\multicolumn{1}{|p{4.76cm}|}{\par \centering {\normalsize{[descr]}}} & 
+\multicolumn{1}{|p{3.20cm}|}{\par \centering {\normalsize{[price]}}} & 
+\multicolumn{1}{|p{3.19cm}|}{\par \centering {\normalsize{[disc]}}} & 
+\multicolumn{1}{|p{3.15cm}|}{\par \centering {\normalsize{[total]}}} \\ 
+\hhline{------}
+\multicolumn{1}{|p{2.04cm}|}{\par \centering {\normalsize{ }}} & 
+\multicolumn{1}{|p{2.71cm}|}{\par \centering {\normalsize{ }}} & 
+\multicolumn{1}{|p{4.76cm}|}{\par \centering {\normalsize{ }}} & 
+\multicolumn{1}{|p{3.20cm}|}{\par \centering {\normalsize{ }}} & 
+\multicolumn{1}{|p{3.19cm}|}{\par \centering {\normalsize{ }}} & 
+\multicolumn{1}{|p{3.15cm}|}{\par \centering {\normalsize{ }}} \\ 
+\hhline{------}
+\multicolumn{1}{|p{2.04cm}|}{\par \centering {\normalsize{ }}} & 
+\multicolumn{1}{|p{2.71cm}|}{\par \centering {\normalsize{ }}} & 
+\multicolumn{1}{|p{4.76cm}|}{\par \centering {\normalsize{ }}} & 
+\multicolumn{1}{|p{3.20cm}|}{\par \centering {\normalsize{ }}} & 
+\multicolumn{1}{|p{3.19cm}|}{\par \centering {\normalsize{ }}} & 
+\multicolumn{1}{|p{3.15cm}|}{\par \centering {\normalsize{ }}} \\ 
+\hhline{------}
+\multicolumn{1}{|p{2.04cm}|}{\par \centering {\normalsize{ }}} & 
+\multicolumn{1}{|p{2.71cm}|}{\par \centering {\normalsize{ }}} & 
+\multicolumn{1}{|p{4.76cm}|}{\par \centering {\normalsize{ }}} & 
+\multicolumn{1}{|p{3.20cm}|}{\par \centering {\normalsize{ }}} & 
+\multicolumn{1}{|p{3.19cm}|}{\par \centering {\normalsize{ }}} & 
+\multicolumn{1}{|p{3.15cm}|}{\par \centering {\normalsize{ }}} \\ 
+\hhline{------}
+\multicolumn{1}{|p{2.04cm}|}{\par \centering {\normalsize{ }}} & 
+\multicolumn{1}{|p{2.71cm}|}{\par \centering {\normalsize{ }}} & 
+\multicolumn{1}{|p{4.76cm}|}{\par \centering {\normalsize{ }}} & 
+\multicolumn{1}{|p{3.20cm}|}{\par \centering {\normalsize{ }}} & 
+\multicolumn{1}{|p{3.19cm}|}{\par \centering {\normalsize{ }}} & 
+\multicolumn{1}{|p{3.15cm}|}{\par \centering {\normalsize{ }}} \\ 
+\hhline{------}
+\multicolumn{1}{|p{2.04cm}|}{\par \centering {\normalsize{ }}} & 
+\multicolumn{1}{|p{2.71cm}|}{\par \centering {\normalsize{ }}} & 
+\multicolumn{1}{|p{4.76cm}|}{\par \centering {\normalsize{ }}} & 
+\multicolumn{1}{|p{3.20cm}|}{\par \centering {\normalsize{ }}} & 
+\multicolumn{1}{|p{3.19cm}|}{\par \centering {\normalsize{ }}} & 
+\multicolumn{1}{|p{3.15cm}|}{\par \centering {\normalsize{ }}} \\ 
+\hhline{------}
+\multicolumn{1}{|p{2.04cm}|}{\par \centering {\normalsize{ }}} & 
+\multicolumn{1}{|p{2.71cm}|}{\par \centering {\normalsize{ }}} & 
+\multicolumn{1}{|p{4.76cm}|}{\par \centering {\normalsize{ }}} & 
+\multicolumn{1}{|p{3.20cm}|}{\par \centering {\normalsize{ }}} & 
+\multicolumn{1}{|p{3.19cm}|}{\par \centering {\normalsize{ }}} & 
+\multicolumn{1}{|p{3.15cm}|}{\par \centering {\normalsize{ }}} \\ 
+\hhline{------}
+\multicolumn{3}{|p{9.51cm}|}{\multirow{4}{*}{\parbox{9.51cm}{\par \raggedright { }}}} & 
+\multicolumn{1}{|p{3.20cm}|}{\centering {Total Discount}} & 
+\multicolumn{1}{|p{3.19cm}|}{\centering { }} & 
+\multicolumn{1}{|p{3.15cm}|}{\par \centering {\normalsize{ }}} \\ 
+\hhline{-~~---}
+\multicolumn{1}{|p{2.04cm}|}{ } & 
+\multicolumn{1}{p{2.71cm}}{ } & 
+\multicolumn{1}{p{4.76cm}}{ } & 
+\multicolumn{1}{|p{3.20cm}|}{\multirow{3}{*}{\parbox{3.20cm}{\par \centering { }}}} & 
+\multicolumn{1}{|p{3.19cm}|}{\centering {Subtotal
+}} & 
+\multicolumn{1}{|p{3.15cm}|}{\centering {\normalsize{ }}} \\ 
+\hhline{-~~---}
+\multicolumn{1}{|p{2.04cm}|}{ } & 
+\multicolumn{1}{p{2.71cm}}{ } & 
+\multicolumn{1}{p{4.76cm}}{ } & 
+\multicolumn{1}{|p{3.20cm}|}{ } & 
+\multicolumn{1}{|p{3.19cm}|}{\centering {Sales Tax
+}} & 
+\multicolumn{1}{|p{3.15cm}|}{\centering {\normalsize{ }}} \\ 
+\hhline{-~~---}
+\multicolumn{1}{|p{2.04cm}|}{ } & 
+\multicolumn{1}{p{2.71cm}}{ } & 
+\multicolumn{1}{p{4.76cm}}{ } & 
+\multicolumn{1}{|p{3.20cm}|}{ } & 
+\multicolumn{1}{|p{3.19cm}|}{\centering {Total Amount}} & 
+\multicolumn{1}{|p{3.15cm}|}{\centering {\normalsize{ }}} \\ 
+\hhline{-~~---}
+\end{tabular}
+\end{adjustbox}
+\end{table}
+\raggedright \par \raggedright {I hereby acclaim that the above-mentioned payment is due in favor of [Print Name] which needs to be paid on urgent. The said amount must reach to the [Company Name] favor within [X] days otherwise legal proceedings will be started without delay.\par }
+\begin{table}[H]
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{p{4.76cm}p{9.52cm}p{4.76cm}}
+\hhline{---}
+\multicolumn{1}{p{4.76cm}}{\par Authorized signature} & 
+\multicolumn{1}{p{9.52cm}}{\par Full Name} & 
+\multicolumn{1}{p{4.76cm}}{\par Date} \\ 
+\hhline{---}
+\multicolumn{1}{p{4.76cm}}{\par Authorized signature} & 
+\multicolumn{1}{p{9.52cm}}{\par Full Name} & 
+\multicolumn{1}{p{4.76cm}}{\par Date} \\ 
+\hhline{---}
+\end{tabular}
+\end{adjustbox}
+\end{table}
+\raggedright \par \centering {\normalsize{\textbf{\par [company]\par  [street],[city], [st], [zip] [phone] [fax] [email]}}}
+\end{document}

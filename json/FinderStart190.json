@@ -1,0 +1,323 @@
+{
+    "IdDeclare": "190",
+    "Mode": "new",
+    "MainTab": [
+        {
+            "id": 1,
+            "company": "Google",
+            "hirigndate": "2010-01-01",
+            "employeename": "Jon Smith",
+            "jobtitle": "programmer",
+            "positionnumber": 4,
+            "applied": "programmer",
+            "skills": "HTML, CSS, JavaScript",
+            "edate": "2023-01-01",
+            "amount": 10000,
+            "reason": "",
+            "note": ""
+        },
+        {
+            "id": 2,
+            "company": "Microsoft",
+            "hirigndate": "2005-01-01",
+            "employeename": "Billy",
+            "jobtitle": "programmer",
+            "positionnumber": 5,
+            "applied": "programmer",
+            "skills": "C, Python",
+            "edate": "2023-05-01",
+            "amount": 20000,
+            "reason": "",
+            "note": ""
+        }
+    ],
+    "TotalTab": [
+        {
+            "n_total": 2
+        }
+    ],
+    "ColumnTab": [
+        "id",
+        "company",
+        "hirigndate",
+        "employeename",
+        "jobtitle",
+        "positionnumber",
+        "applied",
+        "skills",
+        "edate",
+        "amount",
+        "reason",
+        "note"
+    ],
+    "SQLText": "select 1 as id,  \u0027Google\u0027 as company, \u00272010-01-01\u0027  as hirigndate, \u0027Jon Smith\u0027 as employeename, \u0027programmer\u0027 as jobtitle, 4 positionnumber, \u0027programmer\u0027 applied,\u0027HTML, CSS, JavaScript\u0027 skills, \u00272023-01-01\u0027 edate, 10000 amount, \u0027\u0027 reason, \u0027\u0027 note\nunion all\nselect 2 as id,  \u0027Microsoft\u0027 as company, \u00272005-01-01\u0027  as hirigndate, \u0027Billy\u0027 as employeename, \u0027programmer\u0027 as jobtitle, 5 positionnumber, \u0027programmer\u0027 applied,\u0027C, Python\u0027 skills, \u00272023-05-01\u0027 edate, 20000 amount, \u0027\u0027 reason, \u0027\u0027 note\n \n",
+    "DecName": "Payroll Action Form",
+    "Descr": "Payroll Action Form",
+    "EditProc": "edit",
+    "DelProc": "del",
+    "TableName": "edit",
+    "SaveFieldList": "id,company,hirigndate,employeename,jobtitle,positionnumber,applied,skills,amount,reason,note",
+    "KeyF": "id",
+    "DispField": "company",
+    "KeyValue": "",
+    "SumFields": "",
+    "FROZENCOLS": 0,
+    "OrdField": "",
+    "addFilter": "",
+    "MaxSortOrder": 0,
+    "Fcols": [
+        {
+            "Parent": null,
+            "FieldName": "id",
+            "FieldCaption": "id",
+            "Width": 100,
+            "Visible": true,
+            "DisplayFormat": "",
+            "FindString": "",
+            "Sort": "\u041D\u0435\u0442",
+            "SortOrder": null
+        },
+        {
+            "Parent": null,
+            "FieldName": "company",
+            "FieldCaption": "Company Name",
+            "Width": 100,
+            "Visible": true,
+            "DisplayFormat": "",
+            "FindString": "",
+            "Sort": "\u041D\u0435\u0442",
+            "SortOrder": null
+        },
+        {
+            "Parent": null,
+            "FieldName": "hirigndate",
+            "FieldCaption": "Hiring Date",
+            "Width": 100,
+            "Visible": true,
+            "DisplayFormat": "",
+            "FindString": "",
+            "Sort": "\u041D\u0435\u0442",
+            "SortOrder": null
+        },
+        {
+            "Parent": null,
+            "FieldName": "employeename",
+            "FieldCaption": "Employee Name",
+            "Width": 100,
+            "Visible": true,
+            "DisplayFormat": "",
+            "FindString": "",
+            "Sort": "\u041D\u0435\u0442",
+            "SortOrder": null
+        },
+        {
+            "Parent": null,
+            "FieldName": "jobtitle",
+            "FieldCaption": "Current Job Title",
+            "Width": 100,
+            "Visible": true,
+            "DisplayFormat": "",
+            "FindString": "",
+            "Sort": "\u041D\u0435\u0442",
+            "SortOrder": null
+        },
+        {
+            "Parent": null,
+            "FieldName": "positionnumber",
+            "FieldCaption": "Position Number",
+            "Width": 100,
+            "Visible": true,
+            "DisplayFormat": "",
+            "FindString": "",
+            "Sort": "\u041D\u0435\u0442",
+            "SortOrder": null
+        },
+        {
+            "Parent": null,
+            "FieldName": "applied",
+            "FieldCaption": "Position Applied For",
+            "Width": 100,
+            "Visible": true,
+            "DisplayFormat": "",
+            "FindString": "",
+            "Sort": "\u041D\u0435\u0442",
+            "SortOrder": null
+        },
+        {
+            "Parent": null,
+            "FieldName": "skills",
+            "FieldCaption": "Required Skills",
+            "Width": 100,
+            "Visible": true,
+            "DisplayFormat": "",
+            "FindString": "",
+            "Sort": "\u041D\u0435\u0442",
+            "SortOrder": null
+        },
+        {
+            "Parent": null,
+            "FieldName": "edate",
+            "FieldCaption": "Effective Date",
+            "Width": 100,
+            "Visible": true,
+            "DisplayFormat": "",
+            "FindString": "",
+            "Sort": "\u041D\u0435\u0442",
+            "SortOrder": null
+        },
+        {
+            "Parent": null,
+            "FieldName": "amount",
+            "FieldCaption": "Basic Pay",
+            "Width": 100,
+            "Visible": true,
+            "DisplayFormat": "",
+            "FindString": "",
+            "Sort": "\u041D\u0435\u0442",
+            "SortOrder": null
+        },
+        {
+            "Parent": null,
+            "FieldName": "reason",
+            "FieldCaption": "Action Reason",
+            "Width": 100,
+            "Visible": true,
+            "DisplayFormat": "",
+            "FindString": "",
+            "Sort": "\u041D\u0435\u0442",
+            "SortOrder": null
+        },
+        {
+            "Parent": null,
+            "FieldName": "note",
+            "FieldCaption": "Note",
+            "Width": 100,
+            "Visible": true,
+            "DisplayFormat": "",
+            "FindString": "",
+            "Sort": "\u041D\u0435\u0442",
+            "SortOrder": null
+        }
+    ],
+    "SearchCols": [
+        {
+            "Parent": null,
+            "FieldName": "company",
+            "FieldCaption": "*",
+            "Width": 100,
+            "Visible": false,
+            "DisplayFormat": "",
+            "FindString": "",
+            "Sort": "\u041D\u0435\u0442",
+            "SortOrder": null
+        }
+    ],
+    "TextParams": null,
+    "SQLParams": null,
+    "DefaultValues": {
+        "audtuser": "user",
+        "last_change_user": "user"
+    },
+    "pagination": true,
+    "nrows": 30,
+    "not_page": null,
+    "page": 1,
+    "TotalString": null,
+    "MaxPage": 1,
+    "OKFun": false,
+    "ReferEdit": {
+        "Editors": [
+            {
+                "FieldName": "id",
+                "FieldCaption": "id",
+                "DisplayFormat": "",
+                "joinRow": null
+            },
+            {
+                "FieldName": "company",
+                "FieldCaption": "Company Name",
+                "DisplayFormat": "",
+                "joinRow": null
+            },
+            {
+                "FieldName": "hirigndate",
+                "FieldCaption": "Hiring Date",
+                "DisplayFormat": "",
+                "joinRow": null
+            },
+            {
+                "FieldName": "employeename",
+                "FieldCaption": "Employee Name",
+                "DisplayFormat": "",
+                "joinRow": null
+            },
+            {
+                "FieldName": "jobtitle",
+                "FieldCaption": "Current Job Title",
+                "DisplayFormat": "",
+                "joinRow": null
+            },
+            {
+                "FieldName": "positionnumber",
+                "FieldCaption": "Position Number",
+                "DisplayFormat": "",
+                "joinRow": null
+            },
+            {
+                "FieldName": "applied",
+                "FieldCaption": "Position Applied For",
+                "DisplayFormat": "",
+                "joinRow": null
+            },
+            {
+                "FieldName": "skills",
+                "FieldCaption": "Required Skills",
+                "DisplayFormat": "",
+                "joinRow": null
+            },
+            {
+                "FieldName": "edate",
+                "FieldCaption": "Effective Date",
+                "DisplayFormat": "",
+                "joinRow": null
+            },
+            {
+                "FieldName": "amount",
+                "FieldCaption": "Basic Pay",
+                "DisplayFormat": "",
+                "joinRow": null
+            },
+            {
+                "FieldName": "reason",
+                "FieldCaption": "Action Reason",
+                "DisplayFormat": "",
+                "joinRow": null
+            },
+            {
+                "FieldName": "note",
+                "FieldCaption": "Note",
+                "DisplayFormat": "",
+                "joinRow": null
+            }
+        ],
+        "SaveFieldList": [
+            "id",
+            "company",
+            "hirigndate",
+            "employeename",
+            "jobtitle",
+            "positionnumber",
+            "applied",
+            "skills",
+            "amount",
+            "reason",
+            "note"
+        ],
+        "text": null
+    },
+    "Account": "user",
+    "IdDeclareSet": "",
+    "Setting": null,
+    "AddKeys": "",
+    "text": "Payroll Action Form"
+}

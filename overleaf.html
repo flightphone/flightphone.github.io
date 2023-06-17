@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="https://www.overleaf.com/docs" method="post" target="_blank">
+        <input type="text" name="engine" value="xelatex">
+        <textarea rows="8" cols="60" name="snip">
+        \usepackage[T1]{fontenc}
+        \usepackage{amsmath}
+        
+        \begin{document}
+        \noindent
+        Bla bla bla bla :
+        \begin{align*}
+        A &amp;= B + C - D \\ \\
+        %phantom
+        &amp;\phantom{= B + C \;}
+        %phantom
+        + D - E \\ \\
+        &amp;= F + G - H.
+        \end{align*}
+        \end{document}
+        </textarea>
+        <input type="submit" value="Open in Overleaf">
+        </form>
+    
+</body>
+</html>
