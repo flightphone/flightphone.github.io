@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/canvas.css">
+    <title>Test Canvas</title>
+</head>
+<style>
+    canvas {
+        border: 1px solid black;
+    }
+</style>
+
+<body>
+
+    <div style="display: flex; justify-content: center; align-items: start; flex-direction: column; gap: 10px">
+        <div style="display: flex;gap: 10px;">
+            <button id="loadBut">Загрузить</button>
+            <button id="exportBut">Экспорт</button>
+        </div>
+        <canvas id="myPics"></canvas>
+    </div>
+
+
+
+
+
+    <div style="display: none;">
+        <input type="file" id="fileImg" />
+    </div>
+
+
+    <script>
+        // When true, moving the mouse draws on the canvas
+        let isDrawing = false;
+        let isLoad = false;
+        let x = 0;
+        let y = 0;
+        let r = 6
+        let hc = 600
+        let wc = 800
+        let h;
+        let w;
+
+        const myPics = document.getElementById("myPics");
+        myPics.setAttribute("width", wc);
+        myPics.setAttribute("height", hc);
+        const context = myPics.getContext("2d");
+
+
+        //const myPics2 = document.getElementById("myPics2");
+        const myPics2 = document.createElement("canvas")
+        let context2 = myPics2.getContext("2d");
+
+
+
+
+        //context.globalAlpha = 0.2;
+
+        // event.offsetX, event.offsetY gives the (x,y) offset from the edge of the canvas.
+
+        // Add the event listeners for mousedown, mousemove, and mouseup
+        myPics.addEventListener("mousedown", (e) => {
+            if (!isLoad)
+                return;
+            x = e.offsetX;
+            y = e.offsetY;
+            isDrawing = true;
+
+        });
+
+        myPics.addEventListener("mousemove", (e) => {
+            if (!isLoad)
+                return;
+            if (isDrawing) {
+                drawLine(context2, x, y, e.offsetX, e.offsetY);
+                x = e.offsetX;
+                y = e.offsetY;
+            }
+            else {
+                drawcursor(e.offsetX, e.offsetY)
+            }
+        });
+
+        window.addEventListener("mouseup", (e) => {
+            if (!isLoad)
+                return;
+            if (isDrawing) {
+                drawLine(context2, x, y, e.offsetX, e.offsetY);
+                x = 0;
+                y = 0;
+                isDrawing = false;
+            }
+        });
+
+        
+
+        function setImage() {
+            context.clearRect(0, 0, wc, hc);
+            context.globalAlpha = 1.0
+            context.drawImage(image, 0, 0, wc, hc);
+            context.globalAlpha = 0.5;
+            context.drawImage(myPics2, 0, 0, wc, hc);
+        }
+
+
+        function drawLine(ctx, x1, y1, x2, y2) {
+            x1 = x1 * w / wc
+            y1 = y1 * h / hc
+
+            x2 = x2 * w / wc
+            y2 = y2 * h / hc
+
+            ctx.beginPath();
+            if (x2 != x1) {
+                n = Math.abs(x2 - x1)
+                sign = Math.sign(x2 - x1)
+                for (let i = 0; i <= n; i++) {
+                    x0 = x1 + i * sign;
+                    y0 = y1 + (x0 - x1) * (y2 - y1) / (x2 - x1)
+                    ctx.beginPath();
+                    ctx.arc(x0, y0, r, 0, 2 * Math.PI);
+                    ctx.fillStyle = "green"
+                    ctx.fill();
+                }
+            }
+            else {
+                n = Math.abs(y2 - y1)
+                sign = Math.sign(y2 - y1)
+                for (let i = 0; i <= n; i++) {
+                    x0 = x1;
+                    y0 = y1 + i * sign;
+                    ctx.beginPath();
+                    ctx.arc(x0, y0, r, 0, 2 * Math.PI);
+                    ctx.fillStyle = "green"
+                    ctx.fill();
+                }
+
+            }
+
+            setImage()
+        }
+
+
+        function drawcursor(x1, y1) {
+            setImage()
+            context.beginPath();
+            context.arc(x1, y1, r, 0, 2 * Math.PI);
+            context.fillStyle = "green"
+            context.fill();
+        }
+
+        const image = new Image();
+        const input = document.getElementById("fileImg");
+        loadBut = document.getElementById("loadBut");
+        loadBut.addEventListener("click", () => {
+            input.click();
+        });
+        exportBut = document.getElementById("exportBut");
+        exportBut.addEventListener("click", () => {
+            DownloadCanvasAsImage();
+            
+        });
+
+        input.onchange = function (ev) {
+            const file = ev.target.files[0]; // get the file
+            const blobURL = URL.createObjectURL(file);
+            image.src = blobURL;
+        }
+
+        image.addEventListener("load", (e) => {
+            context.drawImage(image, 0, 0, wc, hc);
+            w = image.width;
+            h = image.height;
+
+            myPics2.setAttribute("width", w);
+            myPics2.setAttribute("height", h);
+            context2 = myPics2.getContext("2d");
+            context.globalAlpha = 0.2;
+            context.drawImage(myPics2, 0, 0, wc, hc);
+            isLoad = true;
+
+        });
+
+        function DownloadCanvasAsImage() {
+            let downloadLink = document.createElement('a');
+            const myPics3 = document.createElement("canvas")
+            myPics3.setAttribute("width", w);
+            myPics3.setAttribute("height", h);
+            let context3 = myPics3.getContext("2d");
+            context3.drawImage(image, 0, 0)
+            context3.globalAlpha = 0.5;
+            context3.drawImage(myPics2, 0, 0)
+            let dataURL = myPics3.toDataURL('image/png');
+            let url = dataURL.replace(/^data:image\/png/, 'data:application/octet-stream');
+            downloadLink.setAttribute('href', url);
+            downloadLink.setAttribute('download', "image.png");
+            downloadLink.click();
+        }
+
+    </script>
+
+</body>
+
+</html>
