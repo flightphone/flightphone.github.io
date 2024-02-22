@@ -5,28 +5,28 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mebius</title>
-  <script type="module" crossorigin src="/assets/index-b83df26c.js"></script>
+  <script type="module" crossorigin src="/assets/index-fe3b7067.js"></script>
 </head>
 <style>
   html,
   body {
     margin: 0;
     width: 100%;
+    height: 100vh;
     padding: 0;
   }
 
 #mebius_canvas {
     width: 100%;
     height: 100%;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: -1;
+    position:relative;
     pointer-events: none;
   }
 </style>
 <body>
+  <div style="background-color: rgb(154, 154, 154); width: 100%;  height: 99vh">
   <canvas id="mebius_canvas"></canvas> 
+  </div>
   
 </body>
 
