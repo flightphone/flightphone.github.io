@@ -322,7 +322,7 @@
 
             #layer1 {
                   offset-path: path('M 335.46594,143.32407 A 148.33102,104.93742 0 0 1 187.13492,248.26149 148.33102,104.93742 0 0 1 38.803894,143.32407 148.33102,104.93742 0 0 1 187.13492,38.386642 148.33102,104.93742 0 0 1 335.46594,143.32407 Z');
-                  offset-rotate: 0deg;
+                  /*offset-rotate: 0deg;*/
                   animation: layer1_a 8000ms linear infinite normal forwards
             }
 
@@ -333,14 +333,14 @@
 
                   }
 
-                  50% {
-                        offset-distance: 50%;
+                  80% {
+                        offset-distance: -50%;
                         animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
 
                   }
 
                   100% {
-                        offset-distance: 100%;
+                        offset-distance: -100%;
                         animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
 
                   }
