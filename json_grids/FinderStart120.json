@@ -1,0 +1,175 @@
+{
+    "IdDeclare": "120",
+    "Mode": "new",
+    "MainTab": [
+        {
+            "username": "Admin",
+            "fullname": "Admin",
+            "description": null,
+            "orgs": null,
+            "pass": "123",
+            "email": null,
+            "icq": null,
+            "skype": null
+        },
+        {
+            "username": "Guest",
+            "fullname": "Guest123",
+            "description": "local",
+            "orgs": "Guests",
+            "pass": "Guest",
+            "email": null,
+            "icq": null,
+            "skype": null
+        },
+        {
+            "username": "User",
+            "fullname": "User",
+            "description": "Airlines,ConnName11,PsgSQL",
+            "orgs": "Operators",
+            "pass": "123",
+            "email": null,
+            "icq": null,
+            "skype": null
+        },
+        {
+            "username": "User2",
+            "fullname": "User2",
+            "description": "Airlines,ConnName11,MSSQL",
+            "orgs": "BlackListOperators",
+            "pass": "123",
+            "email": null,
+            "icq": null,
+            "skype": null
+        }
+    ],
+    "TotalTab": [
+        {
+            "n_total": 4
+        }
+    ],
+    "ColumnTab": [
+        "username",
+        "fullname",
+        "description",
+        "orgs",
+        "pass",
+        "email",
+        "icq",
+        "skype"
+    ],
+    "SQLText": "select * from t_ntusers order by username",
+    "DecName": "sysUsers",
+    "Descr": "Users",
+    "EditProc": "p_ntusers_edit",
+    "DelProc": "p_ntusers_del",
+    "TableName": "t_NTUsers",
+    "SaveFieldList": "username,fullname,description,orgs,pass,email,icq,skype",
+    "KeyF": "username",
+    "DispField": "username",
+    "KeyValue": "",
+    "SumFields": "",
+    "FROZENCOLS": 0,
+    "OrdField": " username",
+    "addFilter": "",
+    "MaxSortOrder": 0,
+    "Fcols": [
+        {
+            "Parent": null,
+            "FieldName": "username",
+            "FieldCaption": "Account",
+            "Width": 100,
+            "Visible": true,
+            "DisplayFormat": "",
+            "FindString": "",
+            "Sort": "\u041D\u0435\u0442",
+            "SortOrder": null
+        },
+        {
+            "Parent": null,
+            "FieldName": "fullname",
+            "FieldCaption": "Name",
+            "Width": 100,
+            "Visible": true,
+            "DisplayFormat": "",
+            "FindString": "",
+            "Sort": "\u041D\u0435\u0442",
+            "SortOrder": null
+        },
+        {
+            "Parent": null,
+            "FieldName": "email",
+            "FieldCaption": "Email",
+            "Width": 100,
+            "Visible": true,
+            "DisplayFormat": "",
+            "FindString": "",
+            "Sort": "\u041D\u0435\u0442",
+            "SortOrder": null
+        }
+    ],
+    "SearchCols": [
+        {
+            "Parent": null,
+            "FieldName": "username",
+            "FieldCaption": "*",
+            "Width": 100,
+            "Visible": false,
+            "DisplayFormat": "",
+            "FindString": "",
+            "Sort": "\u041D\u0435\u0442",
+            "SortOrder": null
+        }
+    ],
+    "TextParams": null,
+    "SQLParams": null,
+    "DefaultValues": {
+        "audtuser": "ui",
+        "last_change_user": "ui"
+    },
+    "pagination": true,
+    "nrows": 30,
+    "not_page": null,
+    "page": 1,
+    "TotalString": null,
+    "MaxPage": 1,
+    "OKFun": false,
+    "ReferEdit": {
+        "Editors": [
+            {
+                "FieldName": "username",
+                "FieldCaption": "Account",
+                "DisplayFormat": "",
+                "joinRow": null
+            },
+            {
+                "FieldName": "fullname",
+                "FieldCaption": "Name",
+                "DisplayFormat": "",
+                "joinRow": null
+            },
+            {
+                "FieldName": "email",
+                "FieldCaption": "Email",
+                "DisplayFormat": "",
+                "joinRow": null
+            }
+        ],
+        "SaveFieldList": [
+            "username",
+            "fullname",
+            "description",
+            "orgs",
+            "pass",
+            "email",
+            "icq",
+            "skype"
+        ],
+        "text": null
+    },
+    "Account": "ui",
+    "IdDeclareSet": "",
+    "Setting": null,
+    "AddKeys": "",
+    "text": "Users"
+}
