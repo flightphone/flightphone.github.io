@@ -1,0 +1,13 @@
+# 3D модели
+*.glb binary
+*.stl binary
+*.obj binary
+*.step binary
+*.stp binary
+
+# Окружение и текстуры
+*.hdr binary
+*.exr binary
+*.png binary
+*.jpg binary
+*.jpeg binary
