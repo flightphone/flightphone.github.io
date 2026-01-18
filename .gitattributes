@@ -1,11 +1,11 @@
-# 3D модели
+# models
 *.glb binary
 *.stl binary
 *.obj binary
 *.step binary
 *.stp binary
 
-# Окружение и текстуры
+# texture
 *.hdr binary
 *.exr binary
 *.png binary
