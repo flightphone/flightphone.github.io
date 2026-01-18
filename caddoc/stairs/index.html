@@ -25,7 +25,7 @@
     
     
       
-        <title>Stairs - CAD Collection</title>
+        <title>Spiral Staircase - CAD Collection</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#stairs" class="md-skip">
+        <a href="#parametric-spiral-staircase-generator" class="md-skip">
           Skip to content
         </a>
       
@@ -117,7 +117,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Stairs
+              Spiral Staircase
             
           </span>
         </div>
@@ -322,7 +322,7 @@
   <span class="md-ellipsis">
     
   
-    Voltage
+    High-Voltage Transmission Tower
   
 
     
@@ -378,6 +378,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Spiral Staircase
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -385,7 +403,7 @@
   <span class="md-ellipsis">
     
   
-    Stairs
+    Spiral Staircase
   
 
     
@@ -394,6 +412,58 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Description:
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Features:
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dimensions-default" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dimensions (Default):
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -554,6 +624,47 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Description:
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Features:
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dimensions-default" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dimensions (Default):
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -569,8 +680,22 @@
 
 
 
-<h1 id="stairs">Stairs<a class="headerlink" href="#stairs" title="Permanent link">&para;</a></h1>
+<h1 id="parametric-spiral-staircase-generator">Parametric Spiral Staircase Generator<a class="headerlink" href="#parametric-spiral-staircase-generator" title="Permanent link">&para;</a></h1>
 <p><a href="https://github.com/flightphone/CadQueryScripts/blob/master/CadQuery/stair.py">source</a></p>
+<h2 id="description">Description:<a class="headerlink" href="#description" title="Permanent link">&para;</a></h2>
+<p>A fully procedural spiral staircase model generated using CadQuery. This script automates the creation of a classic helical stair structure, featuring a central support column and radially arranged treads. The geometry is optimized for 3D printing and architectural visualization, ensuring a seamless connection between the steps and the central axis.</p>
+<h2 id="key-features">Key Features:<a class="headerlink" href="#key-features" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Fully Parametric Design: Easily adjust the total height, radius, and number of steps by modifying simple variables in the script.</li>
+<li>Automated Step Rotation: The algorithm automatically calculates the necessary rotation angle for each tread based on the step count to ensure a full or partial turn.</li>
+<li>Integrated Central Column: Steps are fused to a central pole, creating a sturdy, single-piece solid suitable for FDM/SLA printing.</li>
+<li>Clean Topology: Constructed using solid geometry primitives for error-free export to STEP and STL formats.</li>
+</ol>
+<h2 id="dimensions-default">Dimensions (Default):<a class="headerlink" href="#dimensions-default" title="Permanent link">&para;</a></h2>
+<p>Total Height: 40</p>
+<p>Step Width: 8</p>
+<p>Step Thickness: 2.5</p>
+<p>Central Pole Diameter: 4</p>
 <iframe src="../assets/html/stairs.html" width="100%" height="620px" style="border:none;"></iframe>
 
 
