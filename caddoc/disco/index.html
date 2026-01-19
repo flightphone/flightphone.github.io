@@ -11,7 +11,7 @@
         <link rel="canonical" href="http://flightphone.github.io/caddoc/disco/">
       
       
-        <link rel="prev" href="../taj/">
+        <link rel="prev" href="../section/">
       
       
         <link rel="next" href="../umbrella/">
@@ -25,7 +25,7 @@
     
     
       
-        <title>Discoball - CAD Collection</title>
+        <title>Procedural Disco Ball - CAD Collection</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#disco" class="md-skip">
+        <a href="#procedural-disco-ball-mirror-ball" class="md-skip">
           Skip to content
         </a>
       
@@ -117,7 +117,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Discoball
+              Procedural Disco Ball
             
           </span>
         </div>
@@ -403,7 +403,7 @@
   <span class="md-ellipsis">
     
   
-    Cracked
+    Voronoi Fragmentation Generator
   
 
     
@@ -474,6 +474,33 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../section/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ornate Architectural Facade Section
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -486,6 +513,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Procedural Disco Ball
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -493,7 +538,7 @@
   <span class="md-ellipsis">
     
   
-    Discoball
+    Procedural Disco Ball
   
 
     
@@ -502,6 +547,58 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Description
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Features
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dimensions-default" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dimensions (Default)
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -521,7 +618,7 @@
   <span class="md-ellipsis">
     
   
-    Umbrella
+    Procedural Parametric Umbrella
   
 
     
@@ -554,6 +651,47 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Description
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Features
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dimensions-default" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dimensions (Default)
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -569,8 +707,20 @@
 
 
 
-<h1 id="disco">Disco<a class="headerlink" href="#disco" title="Permanent link">&para;</a></h1>
+<h1 id="procedural-disco-ball-mirror-ball">Procedural Disco Ball (Mirror Ball)<a class="headerlink" href="#procedural-disco-ball-mirror-ball" title="Permanent link">&para;</a></h1>
 <p><a href="https://github.com/flightphone/CadQueryScripts/blob/master/CadQuery/discoball.py">source</a></p>
+<h2 id="description">Description<a class="headerlink" href="#description" title="Permanent link">&para;</a></h2>
+<p>A mathematically generated disco ball consisting of multiple flat rectangular facets mapped onto a spherical surface. This model demonstrates the power of coordinate transformation in CadQuery, where simple 2D tiles are precisely positioned in 3D space to form a perfectly faceted sphere. Ideal for testing PBR (Physically Based Rendering) materials and environment reflections.</p>
+<h2 id="key-features">Key Features<a class="headerlink" href="#key-features" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Adjustable Facet Density: Control the number of mirrors by changing the longitudinal and latitudinal segments.</li>
+<li>Perfect Spherical Mapping: Facets are calculated to maintain a consistent gapless structure.</li>
+<li>Rendering Optimized: Each facet is a flat surface, maximizing the "glitter" effect when used with environment maps (HDRI).</li>
+<li>Manifold Geometry: Despite having many faces, the model is a clean, watertight solid.</li>
+</ol>
+<h2 id="dimensions-default">Dimensions (Default)<a class="headerlink" href="#dimensions-default" title="Permanent link">&para;</a></h2>
+<p>Radius: 40 mm</p>
+<p>Facet Count: 20 X 13 individual faces</p>
 <iframe src="../assets/html/disco.html" width="100%" height="620px" style="border:none;"></iframe>
 
 
@@ -620,6 +770,10 @@
     
     
       <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../assets/js/mathjax.js"></script>
+      
+        <script src="../assets/js/tex-mml-chtml.js"></script>
       
     
   </body>
