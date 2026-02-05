@@ -8,11 +8,25 @@
 </head>
 
 <body>
+    <script type="importmap">
+    {
+    "imports": {
+        "three": "./../js/three.module.min.js"
+    }
+    }
+    </script>
+    <script type="module" src="./../js/model-viewer-module.min.js"></script>
+    <script type="module" src="./../js/model-viewer-effects.min.js"></script>
     <script src="./../js/save-png.js"></script>
-    <script type="module" src="./../js/model-viewer.min.js"></script>
     <model-viewer src="./../models/big_dode.glb" ar ar-modes="webxr scene-viewer quick-look" auto-rotate camera-controls
         tone-mapping="neutral" shadow-intensity="2" shadow-softness="0" exposure="1"
         environment-image="./../enviroment/env1.hdr" style="width: 100%; height: 600px; background-color: #505050;">
+
+        <effect-composer render-mode="quality" msaa="8">
+            <bloom-effect></bloom-effect>
+            <color-grade-effect tonemapping="aces_filmic"></color-grade-effect>
+        </effect-composer>
+
     </model-viewer>
     <script>
         const mv = document.querySelector('model-viewer');

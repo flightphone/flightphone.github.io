@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="./../js/save-png.js"></script>
+    <script type="module" src="./../js/model-viewer.min.js"></script>
+    <model-viewer src="./../models/royal.glb" ar ar-modes="webxr scene-viewer quick-look" auto-rotate camera-controls
+        tone-mapping="neutral" shadow-intensity="2" shadow-softness="0" exposure="1"
+        environment-image="./../enviroment/env1.hdr" style="width: 100%; height: 600px; background-color: #505050;">
+    </model-viewer>
+    <script>
+        const mv = document.querySelector('model-viewer');
+        mv.addEventListener('load', () => {
+            mv.model.materials.forEach((material) => {
+                material.pbrMetallicRoughness.setRoughnessFactor(0.1);
+                material.pbrMetallicRoughness.setMetallicFactor(0.5);
+            })
+
+        });
+    </script>
+
+
+</body>
+
+</html>

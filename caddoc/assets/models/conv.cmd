@@ -1,0 +1,1 @@
+gltf-transform etc1s glass.glb glass_glass.glb --functions "m => { m.setTransmissionFactor(1.0);  m.setIor(1.5); m.setThicknessFactor(1.0); m.setRoughnessFactor(0.05); }"

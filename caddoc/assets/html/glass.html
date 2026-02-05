@@ -8,12 +8,54 @@
 </head>
 
 <body>
-    <script src="./../js/save-png.js"></script>
+    <!--
+    <script type="importmap">
+    {
+    "imports": {
+        "three": "./../js/three.module.min.js"
+    }
+    }
+    </script>
+    <script type="module" src="./../js/model-viewer-module.min.js"></script>
+    <script type="module" src="./../js/model-viewer-effects.min.js"></script>
+    -->
     <script type="module" src="./../js/model-viewer.min.js"></script>
-    <model-viewer src="./../models/glass.glb" environment-image="./../enviroment/env1.hdr" ar
-        ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" shadow-intensity="2"
-        exposure="2" shadow-softness="0.5" style="width: 100%; height: 600px; background-color: #505050;">
+    <script src="./../js/save-png.js"></script>
+    <model-viewer src="./../models/glass_glass2.glb" skybox-image="./../enviroment/env1.hdr" 
+    
+    ar
+        ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" shadow-intensity="0"
+        exposure="2" shadow-softness="0" style="width: 100%; height: 600px; background-color: #505050;">
+        
     </model-viewer>
+    <script>
+        const mv = document.querySelector('model-viewer');
+        mv.addEventListener('load', () => {
+            const material = mv.model.materials[0];
+            //material.setAlphaMode("BLEND");
+            material.pbrMetallicRoughness.setBaseColorFactor([1, 1, 1, 1]);
+            material.pbrMetallicRoughness.setRoughnessFactor(0.1);
+            material.pbrMetallicRoughness.setMetallicFactor(0.2);
+
+            // 1. Устанавливаем эффект стекла (Transmission)
+            material.setTransmissionFactor(1);
+
+            // 2. Устанавливаем толщину (Thickness)
+            material.setThicknessFactor(10.0);
+
+            // 3. Устанавливаем индекс преломления (IOR)
+            material.setIor(1.54);
+
+            // 4. Устанавливаем дисперсию (Dispersion/Abbe Number)
+            // ВНИМАНИЕ: model-viewer/three.js использует значение dispersion (инверсия числа Аббе)
+            if (material.setDispersion) {
+                console.log("disp");
+                material.setDispersion(0.05);
+            }
+        });
+
+
+    </script>
 
 
 </body>
