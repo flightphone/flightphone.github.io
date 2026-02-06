@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--<script type="module" src="./../js/model-viewer.min.js"></script>-->
+    <script type="importmap">
+    {
+    "imports": {
+        "three": "./../js/three.module.min.js"
+    }
+    }
+    </script>
+    <script type="module" src="./../js/model-viewer-module.min.js"></script>
+    <script type="module" src="./../js/model-viewer-effects.min.js"></script>
+    <script src="./../js/save-png.js"></script>
+    <model-viewer src="./../models/pencil.glb" enviroment-image="./../enviroment/env1.hdr" ar
+        ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" shadow-intensity="1"
+        exposure="1" shadow-softness="1" style="width: 100%; height: 600px; background-color: #505050;">
+        
+
+
+    </model-viewer>
+    <script>
+        const mv = document.querySelector('model-viewer');
+        mv.addEventListener('load', () => {
+            const material = mv.model.materials[0];
+            material.pbrMetallicRoughness.setRoughnessFactor(0.1);
+            material.pbrMetallicRoughness.setMetallicFactor(0.2);
+
+            /*
+            const material2 = mv.model.materials[2];
+            material2.pbrMetallicRoughness.setRoughnessFactor(0.05);
+            material2.pbrMetallicRoughness.setMetallicFactor(0.5);
+            */
+
+        });
+
+
+    </script>
+
+
+</body>
+
+</html>
