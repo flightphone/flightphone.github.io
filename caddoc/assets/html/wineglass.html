@@ -21,12 +21,13 @@
     -->
     <script type="module" src="./../js/model-viewer.min.js"></script>
     <script src="./../js/save-png.js"></script>
-    <model-viewer src="./../models/glass_glass2.glb" skybox-image="./../enviroment/env1.hdr" 
+    <model-viewer src="./../models/wineglass.glb" skybox-image="./../enviroment/env1.hdr" 
     
     ar
         ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" shadow-intensity="0"
         exposure="2" shadow-softness="0" style="width: 100%; height: 600px; background-color: #505050;">
 
+        
         
     </model-viewer>
     <script>
@@ -41,7 +42,7 @@
             material.setTransmissionFactor(1);
 
             // 2.  (Thickness)
-            material.setThicknessFactor(10.0);
+            material.setThicknessFactor(8.0);
 
             // 3.  (IOR)
             material.setIor(1.7);
