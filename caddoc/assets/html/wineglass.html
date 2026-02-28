@@ -7,25 +7,15 @@
     <title>Document</title>
 </head>
 
-<body>
-    <!--
-    <script type="importmap">
-    {
-    "imports": {
-        "three": "./../js/three.module.min.js"
-    }
-    }
-    </script>
-    <script type="module" src="./../js/model-viewer-module.min.js"></script>
-    <script type="module" src="./../js/model-viewer-effects.min.js"></script>
-    -->
+<body style="margin: 0px;padding: 0px;">
+    
     <script type="module" src="./../js/model-viewer.min.js"></script>
     <script src="./../js/save-png.js"></script>
     <model-viewer src="./../models/wineglass.glb" skybox-image="./../enviroment/env1.hdr" 
     
     ar
         ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" shadow-intensity="0"
-        exposure="2" shadow-softness="0" style="width: 100%; height: 600px; background-color: #505050;">
+        exposure="2" shadow-softness="0" style="width: 100%; height: 100vh; margin: 0px;  background-color: #505050;">
 
         
         
@@ -36,23 +26,23 @@
             const material = mv.model.materials[0];
             material.pbrMetallicRoughness.setBaseColorFactor([1, 1, 1, 1]);
             material.pbrMetallicRoughness.setRoughnessFactor(0.05);
-            material.pbrMetallicRoughness.setMetallicFactor(0.1);
+            material.pbrMetallicRoughness.setMetallicFactor(0.05);
 
             // 1. (Transmission Glass)
-            material.setTransmissionFactor(1);
+            //material.setTransmissionFactor(1);
 
             // 2.  (Thickness)
-            material.setThicknessFactor(8.0);
+            material.setThicknessFactor(10.0);
 
             // 3.  (IOR)
-            material.setIor(1.7);
+            //material.setIor(1.7);
 
             // 4.  (Dispersion/Abbe Number)
             // 
-            if (material.setDispersion) {
-                console.log("disp");
-                material.setDispersion(0.05);
-            }
+            //if (material.setDispersion) {
+            //    console.log("disp");
+            //    material.setDispersion(0.05);
+            //}
         });
 
 
