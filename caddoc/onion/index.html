@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="http://flightphone.github.io/caddoc/wineglass/">
+        <link rel="canonical" href="http://flightphone.github.io/caddoc/onion/">
       
       
-        <link rel="prev" href="../pencil/">
+        <link rel="prev" href="../basilica/">
       
       
-        <link rel="next" href="../wine2/">
+        <link rel="next" href="../dna/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>🍷Crystal Wineglass - CAD Collection</title>
+        <title>Onion Dome — Parametric Surface Generator - CAD Collection</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#crystal-wineglass" class="md-skip">
+        <a href="#onion-dome-parametric-surface-generator" class="md-skip">
           Skip to content
         </a>
       
@@ -119,7 +119,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              🍷Crystal Wineglass
+              Onion Dome — Parametric Surface Generator
             
           </span>
         </div>
@@ -287,18 +287,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -319,7 +321,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -418,10 +420,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../onion/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Onion Dome — Parametric Surface Generator
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -437,6 +466,142 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-it-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How it works
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How it works">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-surface-geometry-onionpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Surface geometry — onion.py
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-mesh-construction-surfgeometrypy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Mesh construction — surfgeometry.py
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-procedural-texture-textureslinespy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Procedural texture — Textures/lines.py
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stack
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parameters
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usage
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Design notes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Repository
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -869,20 +1034,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -903,7 +1066,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1002,37 +1165,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    🍷Crystal Wineglass
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../wineglass/" class="md-nav__link">
         
   
   
@@ -1048,59 +1184,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#description" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Description
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#key-features" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Key Features
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#the-math-of-the-conical-helix" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        The Math of the Conical Helix
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1252,10 +1335,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#description" class="md-nav__link">
+  <a href="#overview" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Description
+        Overview
       
     </span>
   </a>
@@ -1263,10 +1346,60 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#key-features" class="md-nav__link">
+  <a href="#how-it-works" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Key Features
+        How it works
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How it works">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-surface-geometry-onionpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Surface geometry — onion.py
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-mesh-construction-surfgeometrypy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Mesh construction — surfgeometry.py
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-procedural-texture-textureslinespy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Procedural texture — Textures/lines.py
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stack
       
     </span>
   </a>
@@ -1274,10 +1407,43 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#the-math-of-the-conical-helix" class="md-nav__link">
+  <a href="#parameters" class="md-nav__link">
     <span class="md-ellipsis">
       
-        The Math of the Conical Helix
+        Parameters
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usage
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Design notes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Repository
       
     </span>
   </a>
@@ -1301,30 +1467,152 @@
 
 
 
-<h1 id="crystal-wineglass">🍷Crystal Wineglass<a class="headerlink" href="#crystal-wineglass" title="Permanent link">&para;</a></h1>
-<p><a href="https://github.com/flightphone/CadQueryScripts/blob/master/CadQuery/wineglass.py">source</a></p>
-<h2 id="description">Description<a class="headerlink" href="#description" title="Permanent link">&para;</a></h2>
-<p>A sophisticated study in complex surface detailing using helical intersections. The model features a classic "diamond-cut" crystal pattern achieved by projecting and subtracting mirrored helical paths along a conical surface. This demonstrates advanced control over 3D paths in CadQuery, where the radius of the cutting tool evolves with the height of the glass.</p>
-<h2 id="key-features">Key Features<a class="headerlink" href="#key-features" title="Permanent link">&para;</a></h2>
+<h1 id="onion-dome-parametric-surface-generator">Onion Dome — Parametric Surface Generator<a class="headerlink" href="#onion-dome-parametric-surface-generator" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p>A mathematically derived 3D surface modelling the lobed dome of Saint Basil's Cathedral.
+Built entirely in Python with NumPy, PyVista, and PIL — no 3D modelling software involved.</p>
+</blockquote>
+<p><a href="https://github.com/flightphone/CadQueryScripts/blob/master/PararmGeometry/onion.py">source</a></p>
+<iframe src="../assets/html/onion.html" width="100%" height="620px" style="border:none;"></iframe>
+
+<hr />
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p>This project generates a <strong>procedural onion-dome surface</strong> from scratch using pure mathematics. The geometry, mesh, and texture are each computed analytically — no hand-sculpting, no external assets.</p>
+<p>The surface was independently derived to capture three architectural features of a Russian onion dome simultaneously:</p>
 <ul>
-<li>
-<p><strong>Conical Helix Patterning</strong>: Procedural diamond facets generated through the intersection of left-handed and right-handed conical spirals.</p>
-</li>
-<li>
-<p><strong>Faceted Stem</strong>: A multi-stage stem transition that enhances light refraction and provides a tactile grip.</p>
-</li>
-<li>
-<p><strong>Optical Realism</strong>: Designed to maximize the "fire" of the crystal in PBR environments, showcasing complex internal reflections.</p>
-</li>
-<li>
-<p><strong>Variable Geometry</strong>: Every element—from the bowl's taper to the facet depth—is controlled by parameters, allowing for instant transformation from a shot glass to a flute.</p>
-</li>
+<li>the <strong>bulging profile</strong> that makes the dome wider than its base cylinder</li>
+<li>the <strong>lobed segmentation</strong> into equal vertical panels</li>
+<li>the <strong>helical twist</strong> of the ribs toward the apex</li>
 </ul>
-<h2 id="the-math-of-the-conical-helix">The Math of the Conical Helix<a class="headerlink" href="#the-math-of-the-conical-helix" title="Permanent link">&para;</a></h2>
-<p>To map the lines correctly on a tapering bowl, the radius <span class="arithmatex">\(r\)</span> must be a function of the height <span class="arithmatex">\(z\)</span>. If the cone has a half-angle <span class="arithmatex">\(\alpha\)</span>, the path follows:</p>
-<div class="arithmatex">\[x(\theta) = (R_{base} + z \cdot \tan \alpha) \cos(\theta)\]</div>
-<div class="arithmatex">\[y(\theta) = (R_{base} + z \cdot \tan \alpha) \sin(\theta)\]</div>
-<iframe src="../assets/html/wineglass.html" width="100%" height="620px" style="border:none;"></iframe>
+<hr />
+<h2 id="how-it-works">How it works<a class="headerlink" href="#how-it-works" title="Permanent link">&para;</a></h2>
+<h3 id="1-surface-geometry-onionpy">1. Surface geometry — <code>onion.py</code><a class="headerlink" href="#1-surface-geometry-onionpy" title="Permanent link">&para;</a></h3>
+<p>The surface is defined as a parametric function <code>onion(u, v)</code> over the unit square, mapping to (x, y, z) coordinates.</p>
+<p><strong>Profile and bulge</strong> (<code>R(V)</code>): the meridional radius uses a secant function to inflate the dome body beyond a cylindrical baseline. Below the inflection angle <code>p = 90° + 35°</code>, the radius stays constant; above it, <code>R = 1 / cos(V − p)</code>, producing the characteristic outward swell.</p>
+<p><strong>Lobe geometry</strong>: the <code>u</code> parameter is scaled by <code>n_lobes</code> and split into integer (lobe index <code>I</code>) and fractional (local angle <code>U</code>) parts. Each lobe is a small circle of radius <code>r_small = r_big · sin(π / n_lobes)</code> rolling inside the full equatorial circle — giving <code>n</code> equal convex panels that meet cleanly at shared edges.</p>
+<p><strong>Twist</strong>: the rotation of each lobe around the vertical axis includes a twist term <code>(cos(V) + 1) / 4 · π</code>, which smoothly interpolates from zero twist at the equator to <code>π/4</code> at the apex. This is what makes the ribs appear to spiral as they converge at the tip.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">onion</span><span class="p">(</span><span class="n">u</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">n_lobes</span><span class="o">=</span><span class="mi">10</span><span class="p">):</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n">uu</span> <span class="o">=</span> <span class="n">u</span> <span class="o">*</span> <span class="n">n_lobes</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="n">I</span>  <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">floor</span><span class="p">(</span><span class="n">uu</span><span class="p">)</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="n">U</span>  <span class="o">=</span> <span class="p">(</span><span class="n">uu</span> <span class="o">-</span> <span class="n">I</span><span class="p">)</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">-</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">/</span> <span class="mi">2</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="n">V</span>  <span class="o">=</span> <span class="n">v</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="n">p</span>      <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">/</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">35</span> <span class="o">/</span> <span class="mi">180</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="n">R</span>      <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">V</span> <span class="o">&gt;</span> <span class="n">p</span><span class="p">,</span> <span class="mf">1.0</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">V</span> <span class="o">-</span> <span class="n">p</span><span class="p">),</span> <span class="mf">1.0</span><span class="p">)</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="n">z</span>      <span class="o">=</span> <span class="o">-</span><span class="n">R</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">V</span><span class="p">)</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    <span class="n">r_big</span>  <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">R</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">V</span><span class="p">))</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    <span class="n">twist</span>   <span class="o">=</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">V</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">/</span> <span class="mi">4</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>    <span class="n">al</span>      <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">/</span> <span class="n">n_lobes</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>    <span class="n">r_small</span> <span class="o">=</span> <span class="n">r_big</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">al</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>    <span class="n">_x</span> <span class="o">=</span> <span class="n">r_small</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">U</span><span class="p">)</span> <span class="o">+</span> <span class="n">r_big</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">al</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>    <span class="n">_y</span> <span class="o">=</span> <span class="n">r_small</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">U</span><span class="p">)</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>    <span class="n">angle</span> <span class="o">=</span> <span class="n">al</span> <span class="o">*</span> <span class="n">I</span> <span class="o">+</span> <span class="n">twist</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>    <span class="n">x</span> <span class="o">=</span> <span class="n">_x</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span> <span class="o">-</span> <span class="n">_y</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>    <span class="n">y</span> <span class="o">=</span> <span class="n">_x</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span> <span class="o">+</span> <span class="n">_y</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>    <span class="k">return</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span>
+</span></code></pre></div>
+<h3 id="2-mesh-construction-surfgeometrypy">2. Mesh construction — <code>surfgeometry.py</code><a class="headerlink" href="#2-mesh-construction-surfgeometrypy" title="Permanent link">&para;</a></h3>
+<p><code>surf_geom()</code> evaluates the parametric function on a regular (u, v) grid and assembles a PyVista <code>StructuredGrid</code>. Key features:</p>
+<ul>
+<li>vectorised evaluation via <code>np.meshgrid</code> — no Python loops</li>
+<li>optional polygon caps for top and bottom edges (<code>top</code> bitmask)</li>
+<li>automatic UV texture coordinates with configurable tiling (<code>repeat_u</code>, <code>repeat_v</code>)</li>
+<li>smooth per-point normals via <code>compute_normals()</code></li>
+<li><code>to_trimesh()</code> / <code>check_volume()</code> helpers for watertightness validation before export</li>
+</ul>
+<h3 id="3-procedural-texture-textureslinespy">3. Procedural texture — <code>Textures/lines.py</code><a class="headerlink" href="#3-procedural-texture-textureslinespy" title="Permanent link">&para;</a></h3>
+<p><a href="https://github.com/flightphone/CadQueryScripts/blob/master/Textures/lines.py">source</a></p>
+<p>The stripe texture is generated entirely in NumPy — no image editor involved. A 1024 × 1024 grayscale map is built using a <code>smoothstep</code> function applied to a scaled x-coordinate, producing anti-aliased alternating bands. The <code>sign</code> term flips the gradient direction on every other stripe, creating the light/dark contrast visible on the render.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">smoothstep</span><span class="p">(</span><span class="n">edge0</span><span class="p">,</span> <span class="n">edge1</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">clip</span><span class="p">((</span><span class="n">x</span> <span class="o">-</span> <span class="n">edge0</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">edge1</span> <span class="o">-</span> <span class="n">edge0</span><span class="p">),</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">)</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    <span class="k">return</span> <span class="n">t</span> <span class="o">*</span> <span class="n">t</span> <span class="o">*</span> <span class="p">(</span><span class="mf">3.0</span> <span class="o">-</span> <span class="mf">2.0</span> <span class="o">*</span> <span class="n">t</span><span class="p">)</span>
+</span></code></pre></div>
+<p>The result is saved as a PNG and applied as a repeating texture in PyVista with <code>smooth_shading=True</code>.</p>
+<hr />
+<h2 id="stack">Stack<a class="headerlink" href="#stack" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Library</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NumPy</td>
+<td>Vectorised surface math, texture generation</td>
+</tr>
+<tr>
+<td>PyVista</td>
+<td>Mesh construction, UV mapping, rendering</td>
+</tr>
+<tr>
+<td>PIL / Pillow</td>
+<td>Texture export</td>
+</tr>
+<tr>
+<td>trimesh</td>
+<td>Mesh validation (watertightness check)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>n_lobes</code></td>
+<td>10</td>
+<td>Number of vertical dome panels</td>
+</tr>
+<tr>
+<td><code>p</code></td>
+<td>125°</td>
+<td>Inflection angle controlling bulge onset</td>
+</tr>
+<tr>
+<td><code>res_u</code></td>
+<td>500</td>
+<td>Mesh resolution along u (circumference)</td>
+</tr>
+<tr>
+<td><code>res_v</code></td>
+<td>50</td>
+<td>Mesh resolution along v (height)</td>
+</tr>
+<tr>
+<td><code>nn</code> (texture)</td>
+<td>10</td>
+<td>Number of texture stripes</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>pip<span class="w"> </span>install<span class="w"> </span>numpy<span class="w"> </span>pyvista<span class="w"> </span>pillow<span class="w"> </span>trimesh<span class="w"> </span>svgpathtools
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="c1"># Generate texture first</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>python<span class="w"> </span>Textures/lines.py
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="c1"># Render the dome</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>python<span class="w"> </span>PararmGeometry/onion.py
+</span></code></pre></div>
+<hr />
+<h2 id="design-notes">Design notes<a class="headerlink" href="#design-notes" title="Permanent link">&para;</a></h2>
+<p>The surface formula was derived independently to satisfy three geometric constraints at once: a smooth closed profile, equal-width lobes with no gaps or overlaps, and a twist that vanishes at the equator and reaches maximum at the apex. The <code>smoothstep</code>-based texture was written from scratch to avoid any dependency on image-editing software and to keep the stripe edges visually sharp at any resolution.</p>
+<hr />
+<h2 id="repository">Repository<a class="headerlink" href="#repository" title="Permanent link">&para;</a></h2>
+<p>Part of <a href="https://github.com/flightphone/CadQueryScripts">CadQueryScripts</a> — a collection of parametric geometry experiments in Python.</p>
 
 
 
